@@ -1,0 +1,20 @@
+=============== May 7, 2026 (JST) ===============
+21:38:57.898272 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:38:57.972670 db@open opening
+21:38:57.990294 version@stat F·[] S·0B[] Sc·[]
+21:38:58.015711 db@janitor F·2 G·0
+21:38:58.017899 db@open done T·43.716855ms
+21:40:25.371100 db@close closing
+21:40:25.382561 db@close done T·11.455675ms
+=============== May 7, 2026 (JST) ===============
+21:55:37.464347 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:55:37.522278 version@stat F·[] S·0B[] Sc·[]
+21:55:37.526934 db@open opening
+21:55:37.543931 journal@recovery F·1
+21:55:37.549124 journal@recovery recovering @1
+21:55:38.971855 memdb@flush created L0@2 N·19304 S·2MiB "\x00\x02\xc3..\x1bN\xf1,v929":"\xff\xff\x8e..\x90y\xc6,v11371"
+21:55:38.979879 version@stat F·[1] S·2MiB[2MiB] Sc·[0.25]
+21:55:39.097098 db@janitor F·3 G·0
+21:55:39.099979 db@open done T·1.570552423s
+21:57:12.437945 db@close closing
+21:57:12.447945 db@close done T·9.994208ms

@@ -41,7 +41,7 @@ func NewRelayCommitteeModule(Ip_nodeTable map[uint64]map[uint64]string, Ss *sign
 
 // transfrom, data to transaction
 // check whether it is a legal txs meesage. if so, read txs and put it into the txlist
-func data2tx(data []string, nonce uint64) (*core.Transaction, bool) {
+func data2tx_Szhbft(data []string, nonce uint64) (*core.Transaction, bool) {
 	if data[6] == "0" && data[7] == "0" && len(data[3]) > 16 && len(data[4]) > 16 && data[3] != data[4] {
 		val, ok := new(big.Int).SetString(data[8], 10)
 		if !ok {
@@ -104,7 +104,7 @@ func (rthm *RelayCommitteeModule) MsgSendingControl() {
 		if err != nil {
 			log.Panic(err)
 		}
-		if tx, ok := data2tx(data, uint64(rthm.nowDataNum)); ok {
+		if tx, ok := data2tx_Szhbft(data, uint64(rthm.nowDataNum)); ok {
 			txlist = append(txlist, tx)
 			rthm.nowDataNum++
 		}

@@ -16,7 +16,7 @@ var (
 
 // consensus layer & output file path
 var (
-	ConsensusMethod = 0 // ConsensusMethod an Integer, which indicates the choice ID of methods / consensuses. Value range: [0, 4), representing [CLPA_Broker, CLPA, Broker, Relay]"
+	ConsensusMethod = 0 // ConsensusMethod an Integer, which indicates the choice ID of methods / consensuses. Value range: [0, 5), representing [CLPA_Broker, CLPA, Broker, Relay, SZHBFT]"
 
 	PbftViewChangeTimeOut = 10000 // The view change threshold of pbft. If the process of PBFT is too slow, the view change mechanism will be triggered.
 
@@ -26,9 +26,9 @@ var (
 	BlocksizeInBytes    = 20000 // The maximum size (in bytes) of block body
 	UseBlocksizeInBytes = 0     // Use blocksizeInBytes as the blocksize measurement if '1'.
 
-	InjectSpeed   = 2000   // The speed of transaction injection
-	TotalDataSize = 160000 // The total number of txs to be injected
-	TxBatchSize   = 16000  // The supervisor read a batch of txs then send them. The size of a batch is 'TxBatchSize'
+	InjectSpeed   = 500   // The speed of transaction injection
+	TotalDataSize = 20000 // The total number of txs to be injected
+	TxBatchSize   = 1000  // The supervisor read a batch of txs then send them. The size of a batch is 'TxBatchSize'
 
 	BrokerNum            = 10 // The # of Broker accounts used in Broker / CLPA_Broker.
 	RelayWithMerkleProof = 0  // When using a consensus about "Relay", nodes will send Tx Relay with proof if "RelayWithMerkleProof" = 1

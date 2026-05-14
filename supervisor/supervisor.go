@@ -61,8 +61,10 @@ func (d *Supervisor) NewSupervisor(ip string, pcc *params.ChainConfig, committee
 		d.comMod = committee.NewCLPACommitteeModule(d.Ip_nodeTable, d.Ss, d.sl, params.DatasetFile, params.TotalDataSize, params.TxBatchSize, params.ReconfigTimeGap)
 	case "Broker":
 		d.comMod = committee.NewBrokerCommitteeMod(d.Ip_nodeTable, d.Ss, d.sl, params.DatasetFile, params.TotalDataSize, params.TxBatchSize)
-	default:
+	case "Relay":
 		d.comMod = committee.NewRelayCommitteeModule(d.Ip_nodeTable, d.Ss, d.sl, params.DatasetFile, params.TotalDataSize, params.TxBatchSize)
+	default:
+		d.comMod = committee.NewSzhbftCommitteeModule(d.Ip_nodeTable, d.Ss, d.sl, params.DatasetFile, params.TotalDataSize, params.TxBatchSize)
 	}
 
 	d.testMeasureMods = make([]measure.MeasureModule, 0)
@@ -72,18 +74,30 @@ func (d *Supervisor) NewSupervisor(ip string, pcc *params.ChainConfig, committee
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestModule_avgTPS_Relay())
 		case "TPS_Broker":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestModule_avgTPS_Broker())
+		case "TPS_SZHBFT":
+			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestModule_avgTPS_Szhbft())
+		
 		case "TCL_Relay":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestModule_TCL_Relay())
 		case "TCL_Broker":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestModule_TCL_Broker())
+		case "TCL_SZHBFT":
+			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestModule_TCL_Szhbft())
+		
 		case "CrossTxRate_Relay":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestCrossTxRate_Relay())
 		case "CrossTxRate_Broker":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestCrossTxRate_Broker())
+		case "CrossTxRate_SZHBFT":
+			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestCrossTxRate_Szhbft())
+		
 		case "TxNumberCount_Relay":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestTxNumCount_Relay())
 		case "TxNumberCount_Broker":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestTxNumCount_Broker())
+		case "TxNumberCount_SZHBFT":
+			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestTxNumCount_Szhbft())
+		
 		case "Tx_Details":
 			d.testMeasureMods = append(d.testMeasureMods, measure.NewTestTxDetail())
 		default:

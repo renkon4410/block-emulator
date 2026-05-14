@@ -158,19 +158,28 @@ func NewPbftNode(shardID, nodeID uint64, pcc *params.ChainConfig, messageHandleT
 		p.ohm = &RawBrokerOutsideModule{
 			pbftNode: p,
 		}
-	default:
+	case "Relay":
 		p.ihm = &RawRelayPbftExtraHandleMod{
 			pbftNode: p,
 		}
 		p.ohm = &RawRelayOutsideModule{
 			pbftNode: p,
 		}
+	default:	//SZHBFT
+		p.ihm = &SZHBFTPbftExtraHandleMod{
+			pbftNode: p,
+			ZoneID: p.ShardID / 2, //ゾーンの決定
+		}
+		p.ohm = &SZHBFTOutsideModule{
+			pbftNode: p,
+			ZoneID:   p.ShardID / 2,
+		}
 	}
 
 	// set pbft stage now
 	p.conditionalVarpbftLock = *sync.NewCond(&p.pbftLock)
 	p.pbftStage.Store(1)
-
+	
 	return p
 }
 

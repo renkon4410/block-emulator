@@ -1,0 +1,1563 @@
+S2N0: 2026/05/08 00:18:57 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 27 
+S2N0: 2026/05/08 00:18:58 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 57 
+S2N0: 2026/05/08 00:18:59 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 50 
+S2N0: 2026/05/08 00:19:00 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 97
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 30 
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 97
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 97
+S2N0: 2026/05/08 00:19:00 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:00 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:19:00 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:19:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:00 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:19:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:00 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:19:00 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:19:00 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:19:00 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:19:00 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:58: S2N0 : adding the block 97...now height = 96 
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:60: S2N0 : added the block 97... 
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 97 
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:19:00 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:19:00 messageHandle.go:270: S2N0: this round of pbft 97 is end 
+S2N0: 2026/05/08 00:19:00 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:19:01 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 23 
+S2N0: 2026/05/08 00:19:01 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 1 
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 98
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:02 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 98
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:02 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:19:02 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:19:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:02 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:19:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:02 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:19:02 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:19:02 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:19:02 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:19:02 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:58: S2N0 : adding the block 98...now height = 97 
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 8 
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 26 
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:60: S2N0 : added the block 98... 
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 98 
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:19:02 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:19:02 messageHandle.go:270: S2N0: this round of pbft 98 is end 
+S2N0: 2026/05/08 00:19:02 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 98
+S2N0: 2026/05/08 00:19:02 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:03 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 61 
+S2N0: 2026/05/08 00:19:03 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 44 
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 99
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:04 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 99
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:04 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:19:04 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:19:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:04 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:19:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:04 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:19:04 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:19:04 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:19:04 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:19:04 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 48 
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:58: S2N0 : adding the block 99...now height = 98 
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:60: S2N0 : added the block 99... 
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 99 
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:19:04 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:19:04 messageHandle.go:270: S2N0: this round of pbft 99 is end 
+S2N0: 2026/05/08 00:19:04 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 99
+S2N0: 2026/05/08 00:19:04 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:05 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 17 
+S2N0: 2026/05/08 00:19:05 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 15 
+S2N0: 2026/05/08 00:19:06 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 100
+S2N0: 2026/05/08 00:19:06 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:06 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:19:06 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 100
+S2N0: 2026/05/08 00:19:06 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:19:06 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:19:06 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:19:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:06 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:19:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:19:06 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:19:06 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:19:06 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:19:06 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:19:06 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:19:06 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:19:06 pbftInside_moduleBroker.go:58: S2N0 : adding the block 100...now height = 99 
+nside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:16 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:16 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:16 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 52
+S2N0: 2026/05/08 00:16:16 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:16 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 52
+S2N0: 2026/05/08 00:16:16 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:16 messageHandle.go:270: S2N0: this round of pbft 52 is end 
+S2N0: 2026/05/08 00:16:16 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:16 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/08 00:16:16 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 52
+S2N0: 2026/05/08 00:16:16 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:17 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 27 
+S2N0: 2026/05/08 00:16:17 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 19 
+S2N0: 2026/05/08 00:16:18 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:18 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:18 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:18 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:18 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:18 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:18 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:18 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:18 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:58: S2N0 : adding the block 53...now height = 52 
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 53
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:60: S2N0 : added the block 53... 
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 53
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 53 
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:18 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:18 messageHandle.go:270: S2N0: this round of pbft 53 is end 
+S2N0: 2026/05/08 00:16:18 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 53
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:18 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:19 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 35 
+S2N0: 2026/05/08 00:16:19 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 46 
+S2N0: 2026/05/08 00:16:20 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:20 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:20 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:20 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:20 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:20 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:20 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:20 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:20 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:58: S2N0 : adding the block 54...now height = 53 
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:60: S2N0 : added the block 54... 
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 54 
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:20 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 54
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:20 messageHandle.go:270: S2N0: this round of pbft 54 is end 
+S2N0: 2026/05/08 00:16:20 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 54
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 54
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:20 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 7 
+S2N0: 2026/05/08 00:16:21 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 46 
+S2N0: 2026/05/08 00:16:21 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 40 
+S2N0: 2026/05/08 00:16:22 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:22 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:22 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:22 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:22 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:22 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:22 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:22 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:22 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:58: S2N0 : adding the block 55...now height = 54 
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:60: S2N0 : added the block 55... 
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 55 
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:22 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 55
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:22 messageHandle.go:270: S2N0: this round of pbft 55 is end 
+S2N0: 2026/05/08 00:16:22 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 55
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 55
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:22 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:23 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 37 
+S2N0: 2026/05/08 00:16:23 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 30 
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 14 
+S2N0: 2026/05/08 00:16:24 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:24 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:24 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:24 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:24 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:24 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:24 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:24 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:24 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:58: S2N0 : adding the block 56...now height = 55 
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 56
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:60: S2N0 : added the block 56... 
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 56 
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:24 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:24 messageHandle.go:270: S2N0: this round of pbft 56 is end 
+S2N0: 2026/05/08 00:16:24 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 56
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 56
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:24 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 9 
+S2N0: 2026/05/08 00:16:25 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 27 
+S2N0: 2026/05/08 00:16:25 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 48 
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 41 
+S2N0: 2026/05/08 00:16:26 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:26 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:26 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:26 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:26 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:26 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:26 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:26 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:26 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:58: S2N0 : adding the block 57...now height = 56 
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 57
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:60: S2N0 : added the block 57... 
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 57 
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 57
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:26 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:26 messageHandle.go:270: S2N0: this round of pbft 57 is end 
+S2N0: 2026/05/08 00:16:26 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 57
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:26 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:27 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 32 
+S2N0: 2026/05/08 00:16:27 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 14 
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 40 
+S2N0: 2026/05/08 00:16:28 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:28 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:28 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:28 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:28 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:28 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:28 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:28 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:28 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:58: S2N0 : adding the block 58...now height = 57 
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 58
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:60: S2N0 : added the block 58... 
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 58 
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 58
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:28 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 58
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:28 messageHandle.go:270: S2N0: this round of pbft 58 is end 
+S2N0: 2026/05/08 00:16:28 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:28 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 22 
+S2N0: 2026/05/08 00:16:29 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 46 
+S2N0: 2026/05/08 00:16:29 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 48 
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 55 
+S2N0: 2026/05/08 00:16:30 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:30 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:30 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:30 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:30 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:30 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:30 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:30 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:30 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:58: S2N0 : adding the block 59...now height = 58 
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:60: S2N0 : added the block 59... 
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 59 
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:30 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 59
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 59
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 59
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:30 messageHandle.go:270: S2N0: this round of pbft 59 is end 
+S2N0: 2026/05/08 00:16:30 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:30 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:31 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/08 00:16:31 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 7 
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 48 
+S2N0: 2026/05/08 00:16:32 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:32 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:32 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:32 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:32 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:32 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:32 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:32 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:32 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:58: S2N0 : adding the block 60...now height = 59 
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:60: S2N0 : added the block 60... 
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 60 
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 60
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:32 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:32 messageHandle.go:270: S2N0: this round of pbft 60 is end 
+S2N0: 2026/05/08 00:16:32 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 60
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 60
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:32 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 27 
+S2N0: 2026/05/08 00:16:33 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 7 
+S2N0: 2026/05/08 00:16:33 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 11 
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 3 
+S2N0: 2026/05/08 00:16:34 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:34 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:34 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:34 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:34 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:34 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:34 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:34 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:34 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:58: S2N0 : adding the block 61...now height = 60 
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:60: S2N0 : added the block 61... 
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 61 
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 61
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:34 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 61
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:34 messageHandle.go:270: S2N0: this round of pbft 61 is end 
+S2N0: 2026/05/08 00:16:34 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 61
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:34 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:35 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 19 
+S2N0: 2026/05/08 00:16:35 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 9 
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 44 
+S2N0: 2026/05/08 00:16:36 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:36 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:36 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:36 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:36 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:36 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:36 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:36 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:36 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:58: S2N0 : adding the block 62...now height = 61 
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:60: S2N0 : added the block 62... 
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 62 
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 62
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 62
+S2N0: 2026/05/08 00:16:36 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 62
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:36 messageHandle.go:270: S2N0: this round of pbft 62 is end 
+S2N0: 2026/05/08 00:16:36 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:36 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 1 
+S2N0: 2026/05/08 00:16:37 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 34 
+S2N0: 2026/05/08 00:16:37 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 1 
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 63 
+S2N0: 2026/05/08 00:16:38 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:38 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:38 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:38 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:38 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:38 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:38 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:38 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:38 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:58: S2N0 : adding the block 63...now height = 62 
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 63
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:60: S2N0 : added the block 63... 
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 63 
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 63
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:38 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:38 messageHandle.go:270: S2N0: this round of pbft 63 is end 
+S2N0: 2026/05/08 00:16:38 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 63
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:38 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:39 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 52 
+S2N0: 2026/05/08 00:16:39 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 6 
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 46 
+S2N0: 2026/05/08 00:16:40 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:40 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:40 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:40 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:40 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:40 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:40 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:40 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:40 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:58: S2N0 : adding the block 64...now height = 63 
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:60: S2N0 : added the block 64... 
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 64 
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:40 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 64
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:40 messageHandle.go:270: S2N0: this round of pbft 64 is end 
+S2N0: 2026/05/08 00:16:40 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 64
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 64
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:40 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 63 
+S2N0: 2026/05/08 00:16:41 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 45 
+S2N0: 2026/05/08 00:16:41 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 9 
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 9 
+S2N0: 2026/05/08 00:16:42 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:42 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:42 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:42 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:42 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:42 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:42 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:42 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:42 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:58: S2N0 : adding the block 65...now height = 64 
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:60: S2N0 : added the block 65... 
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 65
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 65 
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:42 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 65
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:42 messageHandle.go:270: S2N0: this round of pbft 65 is end 
+S2N0: 2026/05/08 00:16:42 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 65
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:42 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:43 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 26 
+S2N0: 2026/05/08 00:16:43 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 27 
+S2N0: 2026/05/08 00:16:44 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 23 
+S2N0: 2026/05/08 00:16:44 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:44 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:44 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:44 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:44 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:44 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:44 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:44 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:58: S2N0 : adding the block 66...now height = 65 
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:60: S2N0 : added the block 66... 
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 66 
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:44 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 66
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 66
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 66
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:44 messageHandle.go:270: S2N0: this round of pbft 66 is end 
+S2N0: 2026/05/08 00:16:44 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:44 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 13 
+S2N0: 2026/05/08 00:16:45 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 38 
+S2N0: 2026/05/08 00:16:45 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 49 
+S2N0: 2026/05/08 00:16:46 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 52 
+S2N0: 2026/05/08 00:16:46 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:46 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:46 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:46 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:46 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:46 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:46 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:46 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:58: S2N0 : adding the block 67...now height = 66 
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 67
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:60: S2N0 : added the block 67... 
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 67 
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 67
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:46 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 67
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:46 messageHandle.go:270: S2N0: this round of pbft 67 is end 
+S2N0: 2026/05/08 00:16:46 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:46 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:47 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 49 
+S2N0: 2026/05/08 00:16:47 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 24 
+S2N0: 2026/05/08 00:16:48 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 52 
+S2N0: 2026/05/08 00:16:48 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:48 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:48 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:48 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:48 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:48 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:48 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:48 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:58: S2N0 : adding the block 68...now height = 67 
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 68
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:60: S2N0 : added the block 68... 
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 68 
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:48 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 68
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:48 messageHandle.go:270: S2N0: this round of pbft 68 is end 
+S2N0: 2026/05/08 00:16:48 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 68
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:48 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 2 
+S2N0: 2026/05/08 00:16:49 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 54 
+S2N0: 2026/05/08 00:16:49 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:50 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:50 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 42 
+S2N0: 2026/05/08 00:16:50 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:50 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:50 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:50 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:50 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:50 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:50 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:50 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:58: S2N0 : adding the block 69...now height = 68 
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:60: S2N0 : added the block 69... 
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 69 
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:50 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 69
+S2N0: 2026/05/08 00:16:50 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:50 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:50 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 69
+S2N0: 2026/05/08 00:16:50 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:50 messageHandle.go:270: S2N0: this round of pbft 69 is end 
+S2N0: 2026/05/08 00:16:50 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:50 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 69
+S2N0: 2026/05/08 00:16:50 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:51 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 26 
+S2N0: 2026/05/08 00:16:52 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:52 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:52 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:52 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:52 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:52 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:52 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:52 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:52 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:58: S2N0 : adding the block 70...now height = 69 
+S2N0: 2026/05/08 00:16:52 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 35 
+S2N0: 2026/05/08 00:16:52 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 70
+S2N0: 2026/05/08 00:16:52 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:60: S2N0 : added the block 70... 
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 70 
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:52 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:52 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 70
+S2N0: 2026/05/08 00:16:52 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:52 messageHandle.go:270: S2N0: this round of pbft 70 is end 
+S2N0: 2026/05/08 00:16:52 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:52 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 70
+S2N0: 2026/05/08 00:16:52 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:53 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/08 00:16:54 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:54 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:54 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:54 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:54 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:54 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:54 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:54 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:54 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:58: S2N0 : adding the block 71...now height = 70 
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 17 
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 71
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 21 
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:60: S2N0 : added the block 71... 
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 71 
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:54 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 71
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 71
+S2N0: 2026/05/08 00:16:54 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:54 messageHandle.go:270: S2N0: this round of pbft 71 is end 
+S2N0: 2026/05/08 00:16:54 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:55 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 42 
+S2N0: 2026/05/08 00:16:55 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 28 
+S2N0: 2026/05/08 00:16:56 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:56 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:56 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:56 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:56 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:56 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:16:56 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:56 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:56 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:58: S2N0 : adding the block 72...now height = 71 
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 34 
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 72
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:60: S2N0 : added the block 72... 
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 72 
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:56 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 72
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 72
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:56 messageHandle.go:270: S2N0: this round of pbft 72 is end 
+S2N0: 2026/05/08 00:16:56 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:56 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:57 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 48 
+S2N0: 2026/05/08 00:16:57 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:16:58 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:16:58 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:16:58 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:16:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:58 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:16:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:16:58 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:16:58 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:16:58 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:16:58 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:16:58 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:58: S2N0 : adding the block 73...now height = 72 
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 47 
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:60: S2N0 : added the block 73... 
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 73 
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:16:58 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 73
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 73
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:58 messageHandle.go:270: S2N0: this round of pbft 73 is end 
+S2N0: 2026/05/08 00:16:58 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 41 
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 73
+S2N0: 2026/05/08 00:16:58 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:16:59 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 48 
+S2N0: 2026/05/08 00:16:59 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 4 
+S2N0: 2026/05/08 00:17:00 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:00 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:00 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:00 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:00 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:00 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:00 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:00 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:00 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:58: S2N0 : adding the block 74...now height = 73 
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 18 
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:60: S2N0 : added the block 74... 
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 74 
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 74
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 10 
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:00 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 74
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:00 messageHandle.go:270: S2N0: this round of pbft 74 is end 
+S2N0: 2026/05/08 00:17:00 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 74
+S2N0: 2026/05/08 00:17:00 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:01 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 22 
+S2N0: 2026/05/08 00:17:01 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 56 
+S2N0: 2026/05/08 00:17:02 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:02 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:02 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:02 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:02 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:02 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:02 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:02 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:02 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:58: S2N0 : adding the block 75...now height = 74 
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 75
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 75
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:60: S2N0 : added the block 75... 
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 75 
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 75
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:02 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:02 messageHandle.go:270: S2N0: this round of pbft 75 is end 
+S2N0: 2026/05/08 00:17:02 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 56 
+S2N0: 2026/05/08 00:17:02 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:03 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 33 
+S2N0: 2026/05/08 00:17:03 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 6 
+S2N0: 2026/05/08 00:17:04 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:04 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:04 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:04 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:04 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:04 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:04 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:04 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:04 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:04 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:58: S2N0 : adding the block 76...now height = 75 
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 76
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:60: S2N0 : added the block 76... 
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 76 
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 76
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:04 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 76
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:04 messageHandle.go:270: S2N0: this round of pbft 76 is end 
+S2N0: 2026/05/08 00:17:04 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 2 
+S2N0: 2026/05/08 00:17:04 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 5 
+S2N0: 2026/05/08 00:17:05 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 44 
+S2N0: 2026/05/08 00:17:05 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 5 
+S2N0: 2026/05/08 00:17:06 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:06 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:06 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:06 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:06 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:06 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:06 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:06 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:06 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:06 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:58: S2N0 : adding the block 77...now height = 76 
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 23 
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:60: S2N0 : added the block 77... 
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 77 
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 77
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 77
+S2N0: 2026/05/08 00:17:06 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 77
+S2N0: 2026/05/08 00:17:06 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:06 messageHandle.go:270: S2N0: this round of pbft 77 is end 
+S2N0: 2026/05/08 00:17:06 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:07 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 45 
+S2N0: 2026/05/08 00:17:07 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 8 
+S2N0: 2026/05/08 00:17:08 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:08 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:08 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:08 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:08 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:08 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:08 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:08 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:08 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:08 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:08 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:08 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:08 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:58: S2N0 : adding the block 78...now height = 77 
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 78
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:60: S2N0 : added the block 78... 
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 78 
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:08 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:08 messageHandle.go:270: S2N0: this round of pbft 78 is end 
+S2N0: 2026/05/08 00:17:08 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 78
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 78
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 43 
+S2N0: 2026/05/08 00:17:08 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 21 
+S2N0: 2026/05/08 00:17:09 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 4 
+S2N0: 2026/05/08 00:17:09 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 30 
+S2N0: 2026/05/08 00:17:10 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:10 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:10 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:10 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:10 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:10 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:10 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:10 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:10 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:10 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:10 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:10 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:10 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:58: S2N0 : adding the block 79...now height = 78 
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:60: S2N0 : added the block 79... 
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 79 
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 79
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:10 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 79
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 79
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:10 messageHandle.go:270: S2N0: this round of pbft 79 is end 
+S2N0: 2026/05/08 00:17:10 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 35 
+S2N0: 2026/05/08 00:17:10 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:11 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 40 
+S2N0: 2026/05/08 00:17:11 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 34 
+S2N0: 2026/05/08 00:17:12 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:12 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:12 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:12 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:12 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:12 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:12 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:12 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:12 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:12 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:12 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:12 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:12 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:58: S2N0 : adding the block 80...now height = 79 
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 80
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:60: S2N0 : added the block 80... 
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 80 
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:12 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:12 messageHandle.go:270: S2N0: this round of pbft 80 is end 
+S2N0: 2026/05/08 00:17:12 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 80
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 80
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 25 
+S2N0: 2026/05/08 00:17:12 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:13 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 16 
+S2N0: 2026/05/08 00:17:13 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 9 
+S2N0: 2026/05/08 00:17:14 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:14 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:14 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:14 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:14 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:14 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:14 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:14 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:14 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:14 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:14 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:14 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:14 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:58: S2N0 : adding the block 81...now height = 80 
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 81
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 81
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:60: S2N0 : added the block 81... 
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 81 
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:14 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 81
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:14 messageHandle.go:270: S2N0: this round of pbft 81 is end 
+S2N0: 2026/05/08 00:17:14 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 47 
+S2N0: 2026/05/08 00:17:14 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:15 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 54 
+S2N0: 2026/05/08 00:17:15 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 38 
+S2N0: 2026/05/08 00:17:16 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:16 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:16 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:16 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:16 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:16 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:16 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:16 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:16 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:16 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:16 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:16 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:16 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:58: S2N0 : adding the block 82...now height = 81 
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 82
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:60: S2N0 : added the block 82... 
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 82 
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:16 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 82
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:16 messageHandle.go:270: S2N0: this round of pbft 82 is end 
+S2N0: 2026/05/08 00:17:16 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 82
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 56 
+S2N0: 2026/05/08 00:17:16 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 21 
+S2N0: 2026/05/08 00:17:17 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 29 
+S2N0: 2026/05/08 00:17:17 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 44 
+S2N0: 2026/05/08 00:17:18 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:18 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:18 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:18 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:18 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:18 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:18 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:18 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:18 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:18 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:58: S2N0 : adding the block 83...now height = 82 
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 83
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:60: S2N0 : added the block 83... 
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 83 
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 83
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:18 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:18 messageHandle.go:270: S2N0: this round of pbft 83 is end 
+S2N0: 2026/05/08 00:17:18 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 83
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 13 
+S2N0: 2026/05/08 00:17:18 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:19 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 39 
+S2N0: 2026/05/08 00:17:19 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 23 
+S2N0: 2026/05/08 00:17:20 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:20 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:20 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:20 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:20 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:20 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:20 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:20 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:20 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:20 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:58: S2N0 : adding the block 84...now height = 83 
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:60: S2N0 : added the block 84... 
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 84 
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:20 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 84
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 84
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 84
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:20 messageHandle.go:270: S2N0: this round of pbft 84 is end 
+S2N0: 2026/05/08 00:17:20 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 2 
+S2N0: 2026/05/08 00:17:20 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 28 
+S2N0: 2026/05/08 00:17:21 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 34 
+S2N0: 2026/05/08 00:17:21 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 53 
+S2N0: 2026/05/08 00:17:22 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:22 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:22 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:22 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:22 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:22 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:22 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:22 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:22 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:22 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:58: S2N0 : adding the block 85...now height = 84 
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 85
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:60: S2N0 : added the block 85... 
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 85 
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:22 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:22 messageHandle.go:270: S2N0: this round of pbft 85 is end 
+S2N0: 2026/05/08 00:17:22 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 85
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 85
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 54 
+S2N0: 2026/05/08 00:17:22 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:23 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 56 
+S2N0: 2026/05/08 00:17:23 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 11 
+S2N0: 2026/05/08 00:17:24 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:24 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:24 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:24 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:24 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:24 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:24 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:24 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:24 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:24 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:58: S2N0 : adding the block 86...now height = 85 
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 86
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:60: S2N0 : added the block 86... 
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 86 
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:24 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 86
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:24 messageHandle.go:270: S2N0: this round of pbft 86 is end 
+S2N0: 2026/05/08 00:17:24 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 86
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 65 
+S2N0: 2026/05/08 00:17:24 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 10 
+S2N0: 2026/05/08 00:17:25 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 49 
+S2N0: 2026/05/08 00:17:25 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/08 00:17:26 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:26 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:26 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:26 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:26 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:26 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:26 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:26 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:26 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:26 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:58: S2N0 : adding the block 87...now height = 86 
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:60: S2N0 : added the block 87... 
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 87 
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 87
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:26 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 87
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:26 messageHandle.go:270: S2N0: this round of pbft 87 is end 
+S2N0: 2026/05/08 00:17:26 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 87
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 46 
+S2N0: 2026/05/08 00:17:26 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:27 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 42 
+S2N0: 2026/05/08 00:17:27 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 1 
+S2N0: 2026/05/08 00:17:28 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:28 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:28 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:28 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:28 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:28 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:28 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:28 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:28 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:28 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:58: S2N0 : adding the block 88...now height = 87 
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:60: S2N0 : added the block 88... 
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 88 
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:28 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:28 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 88
+S2N0: 2026/05/08 00:17:28 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:28 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 88
+S2N0: 2026/05/08 00:17:28 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:28 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 88
+S2N0: 2026/05/08 00:17:28 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:28 messageHandle.go:270: S2N0: this round of pbft 88 is end 
+S2N0: 2026/05/08 00:17:28 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:28 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/08 00:17:29 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 22 
+S2N0: 2026/05/08 00:17:30 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:30 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:30 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:30 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:30 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:30 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:30 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:30 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:30 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:30 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:58: S2N0 : adding the block 89...now height = 88 
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:60: S2N0 : added the block 89... 
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 89 
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:30 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 89
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 89
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:30 messageHandle.go:270: S2N0: this round of pbft 89 is end 
+S2N0: 2026/05/08 00:17:30 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 89
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:30 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 58 
+S2N0: 2026/05/08 00:17:31 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 35 
+S2N0: 2026/05/08 00:17:31 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 35 
+S2N0: 2026/05/08 00:17:32 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:32 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:32 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:32 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:32 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:32 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:32 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:32 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:32 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:32 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:58: S2N0 : adding the block 90...now height = 89 
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 25 
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:60: S2N0 : added the block 90... 
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 90 
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:32 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 90
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:32 messageHandle.go:270: S2N0: this round of pbft 90 is end 
+S2N0: 2026/05/08 00:17:32 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 90
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 90
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:32 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 40 
+S2N0: 2026/05/08 00:17:33 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 56 
+S2N0: 2026/05/08 00:17:33 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 32 
+S2N0: 2026/05/08 00:17:34 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:34 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:34 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:34 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:34 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:34 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:34 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:34 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:34 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:34 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:58: S2N0 : adding the block 91...now height = 90 
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:60: S2N0 : added the block 91... 
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 91 
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:34 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 91
+S2N0: 2026/05/08 00:17:34 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:34 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:34 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 91
+S2N0: 2026/05/08 00:17:34 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:34 messageHandle.go:270: S2N0: this round of pbft 91 is end 
+S2N0: 2026/05/08 00:17:34 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:34 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 91
+S2N0: 2026/05/08 00:17:34 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:34 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 45 
+S2N0: 2026/05/08 00:17:35 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 49 
+S2N0: 2026/05/08 00:17:36 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:36 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:36 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:36 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:36 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:36 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:36 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:36 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:36 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:36 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:58: S2N0 : adding the block 92...now height = 91 
+S2N0: 2026/05/08 00:17:36 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 92
+S2N0: 2026/05/08 00:17:36 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:36 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 92
+S2N0: 2026/05/08 00:17:36 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:36 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 92
+S2N0: 2026/05/08 00:17:36 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:60: S2N0 : added the block 92... 
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 92 
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:36 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:36 messageHandle.go:270: S2N0: this round of pbft 92 is end 
+S2N0: 2026/05/08 00:17:36 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:36 pbftOutside_moduleBroker.go:48: S2N0 : has handled injected txs msg, txs: 7 
+S2N0: 2026/05/08 00:17:38 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:38 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:38 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:38 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:38 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:38 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:38 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:38 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:38 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:38 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:58: S2N0 : adding the block 93...now height = 92 
+S2N0: 2026/05/08 00:17:38 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 93
+S2N0: 2026/05/08 00:17:38 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:60: S2N0 : added the block 93... 
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 93 
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:38 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:38 messageHandle.go:270: S2N0: this round of pbft 93 is end 
+S2N0: 2026/05/08 00:17:38 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:38 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 93
+S2N0: 2026/05/08 00:17:38 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:38 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 93
+S2N0: 2026/05/08 00:17:38 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:40 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:40 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:40 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:40 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:40 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:40 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:40 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:40 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:40 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:40 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:58: S2N0 : adding the block 94...now height = 93 
+S2N0: 2026/05/08 00:17:40 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 94
+S2N0: 2026/05/08 00:17:40 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:60: S2N0 : added the block 94... 
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 94 
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:40 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:40 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 94
+S2N0: 2026/05/08 00:17:40 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:40 messageHandle.go:270: S2N0: this round of pbft 94 is end 
+S2N0: 2026/05/08 00:17:40 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:40 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 94
+S2N0: 2026/05/08 00:17:40 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:42 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:42 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:42 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:42 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:42 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:42 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:42 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:42 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:42 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/08 00:17:42 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:58: S2N0 : adding the block 95...now height = 94 
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:60: S2N0 : added the block 95... 
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 95 
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:42 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:42 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 95
+S2N0: 2026/05/08 00:17:42 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:42 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 95
+S2N0: 2026/05/08 00:17:42 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:42 messageHandle.go:270: S2N0: this round of pbft 95 is end 
+S2N0: 2026/05/08 00:17:42 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:42 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 95
+S2N0: 2026/05/08 00:17:42 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:44 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/08 00:17:44 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:41: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/08 00:17:44 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/08 00:17:44 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/08 00:17:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:44 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/08 00:17:44 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/08 00:17:44 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/08 00:17:44 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/08 00:17:44 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/08 00:17:44 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:58: S2N0 : adding the block 96...now height = 95 
+S2N0: 2026/05/08 00:17:44 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 96
+S2N0: 2026/05/08 00:17:44 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:60: S2N0 : added the block 96... 
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:66: S2N0 : main node is trying to send relay txs at height = 96 
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/08 00:17:44 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 96
+S2N0: 2026/05/08 00:17:44 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/08 00:17:44 pbftOutside_moduleBroker.go:34: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 96
+S2N0: 2026/05/08 00:17:44 pbftOutside_moduleBroker.go:38: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:100: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/08 00:17:44 pbftInside_moduleBroker.go:122: S2N0 : sended excuted txs
+S2N0: 2026/05/08 00:17:44 messageHandle.go:270: S2N0: this round of pbft 96 is end 
+S2N0: 2026/05/08 00:17:44 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/08 00:17:44 pbft.go:261: handling stop message
+S2N0: 2026/05/08 00:17:44 pbft.go:266: handled stop message in TCPListen Routine
+S2N0: 2026/05/08 00:17:44 messageHandle.go:81: S2N0 get stopSignal in Propose Routine, now stop...
