@@ -10,6 +10,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 
 	"github.com/boltdb/bolt"
 )
@@ -24,7 +25,7 @@ type Storage struct {
 
 // new a storage, build a bolt datase
 func NewStorage(dbFp string, cc *params.ChainConfig) *Storage {
-	dir := params.DatabaseWrite_path + "chainDB"
+	dir := filepath.Dir(dbFp)
 	errMkdir := os.MkdirAll(dir, os.ModePerm)
 	if errMkdir != nil {
 		log.Panic(errMkdir)

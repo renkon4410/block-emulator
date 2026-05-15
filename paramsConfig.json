@@ -1,9 +1,9 @@
 {
-  "ConsensusMethod":0,
+  "ConsensusMethod":4,
   
   "PbftViewChangeTimeOut":5000,
 
-  "ExpDataRootDir": "expTest_CLPABroker_50000S10N4I2000",
+  "ExpDataRootDir": "expTest_SZHBFT_50000S10N4I2000",
 
   "Block_Interval": 2000,
 

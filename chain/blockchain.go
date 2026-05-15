@@ -249,9 +249,17 @@ func (bc *BlockChain) AddBlock(b *core.Block) {
 
 // new a blockchain.
 // the ChainConfig is pre-defined to identify the blockchain; the db is the status trie database in disk
-func NewBlockChain(cc *params.ChainConfig, db ethdb.Database) (*BlockChain, error) {
-	fmt.Println("Generating a new blockchain", db)
-	chainDBfp := params.DatabaseWrite_path + fmt.Sprintf("chainDB/S%d_N%d", cc.ShardID, cc.NodeID)
+func NewBlockChain(cc *params.ChainConfig, db ethdb.Database, isLocal bool) (*BlockChain, error) {
+	// fmt.Println("Generating a new blockchain", db)
+	
+	// パスをグローバルとローカルでフォルダごと分ける
+    folderName := "chainDB"
+    if isLocal {
+        folderName = "localChainDB"
+    }
+
+	chainDBfp := params.DatabaseWrite_path + fmt.Sprintf("%s/S%d_N%d", folderName, cc.ShardID, cc.NodeID)
+	
 	bc := &BlockChain{
 		db:           db,
 		ChainConfig:  cc,

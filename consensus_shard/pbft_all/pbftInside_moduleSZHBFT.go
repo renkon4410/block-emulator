@@ -58,7 +58,26 @@ func (rphm *SZHBFTPbftExtraHandleMod) HandleinCommit(cmsg *message.Commit) bool 
 	r := rphm.pbftNode.requestPool[string(cmsg.Digest)]
 	// requestType ...
 	block := core.DecodeB(r.Msg.Content)
-	rphm.pbftNode.pl.Plog.Printf("S%dN%d : adding the block %d...now height = %d \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number, rphm.pbftNode.CurChain.CurrentBlock.Header.Number)
+
+	for _, tx := range block.Body {
+		ssid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Sender)
+		rsid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Recipient)
+		// 1つでも自シャード以外が関わればグローバル！！！要改造
+		if ssid != rphm.pbftNode.ShardID || rsid != rphm.pbftNode.ShardID {
+            isLocalSZBlock = false
+            break
+        }
+	}
+	if isLocalSZBlock {
+        // ① SZ内完結ルート
+        rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Local] ローカル台帳に記録。height = %d \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number)
+        rphm.LocalChain.AddBlock(block) 
+        return true // リレーせずに終了
+    }
+
+	rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Global] グローバル台帳に記録します... \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
+
+	
 	rphm.pbftNode.CurChain.AddBlock(block)
 	rphm.pbftNode.pl.Plog.Printf("S%dN%d : added the block %d... \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number)
 	rphm.pbftNode.CurChain.PrintBlockChain()

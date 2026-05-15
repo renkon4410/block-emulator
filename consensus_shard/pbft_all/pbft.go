@@ -18,6 +18,9 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+	"fmt"
+	
+	"github.com/syndtr/goleveldb/leveldb"
 
 	"github.com/ethereum/go-ethereum/core/rawdb"
 	"github.com/ethereum/go-ethereum/ethdb"
@@ -97,7 +100,7 @@ func NewPbftNode(shardID, nodeID uint64, pcc *params.ChainConfig, messageHandleT
 	if err != nil {
 		log.Panic(err)
 	}
-	p.CurChain, err = chain.NewBlockChain(pcc, p.db)
+	p.CurChain, err = chain.NewBlockChain(pcc, p.db, false)
 	if err != nil {
 		log.Panic("cannot new a blockchain")
 	}
@@ -166,13 +169,24 @@ func NewPbftNode(shardID, nodeID uint64, pcc *params.ChainConfig, messageHandleT
 			pbftNode: p,
 		}
 	default:	//SZHBFT
+		localMptDBPath := params.DatabaseWrite_path + fmt.Sprintf("localMptDB/S%d_N%d", p.ShardID, p.NodeID)
+    	localDb, err := leveldb.OpenFile(localMptDBPath, nil)
+    	if err != nil {
+        	log.Panic(err)
+    	}
+    	// ローカルチェーンとして初期化 (trueを指定)
+    	localChain, err := chain.NewBlockChain(pcc, localDb, true)
+    	if err != nil {
+        	log.Panic(err)
+    	}
 		p.ihm = &SZHBFTPbftExtraHandleMod{
 			pbftNode: p,
-			ZoneID: p.ShardID / 2, //ゾーンの決定
+			ZoneID: p.ShardID,
+			LocalChain: localChain,
 		}
 		p.ohm = &SZHBFTOutsideModule{
 			pbftNode: p,
-			ZoneID:   p.ShardID / 2,
+			ZoneID:   p.ShardID,
 		}
 	}
 
