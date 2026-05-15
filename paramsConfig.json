@@ -3,7 +3,7 @@
   
   "PbftViewChangeTimeOut":5000,
 
-  "ExpDataRootDir": "expTest_CLPABroker_500000S4N4I5000",
+  "ExpDataRootDir": "expTest_CLPABroker_50000S10N4I2000",
 
   "Block_Interval": 2000,
 
@@ -11,8 +11,8 @@
   "BlocksizeInBytes": 20000,
   "UseBlocksizeInBytes": 0,
 
-  "InjectSpeed": 5000,
-  "TotalDataSize": 500000,
+  "InjectSpeed": 2000,
+  "TotalDataSize": 50000,
   "TxBatchSize": 1600,
 
   "BrokerNum": 10,

@@ -38,3 +38,13 @@
 16:24:07.103044 table@remove removed @7
 16:24:07.107771 table@remove removed @5
 16:24:07.113370 table@remove removed @3
+=============== May 15, 2026 (JST) ===============
+09:30:43.622517 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:30:43.690762 version@stat F·[0 7] S·13MiB[0B 13MiB] Sc·[0.00 0.14]
+09:30:43.701964 db@open opening
+09:30:43.718913 journal@recovery F·1
+09:30:43.735337 journal@recovery recovering @8
+09:30:45.873713 memdb@flush created L0@17 N·11038 S·1MiB "\x00\x01\xa5..Х=,v92149":"\xff\xf7\x90..i\nY,v98626"
+09:30:45.892655 version@stat F·[1 7] S·15MiB[1MiB 13MiB] Sc·[0.25 0.14]
+09:30:46.163180 db@janitor F·10 G·0
+09:30:46.172455 db@open done T·2.468615972s

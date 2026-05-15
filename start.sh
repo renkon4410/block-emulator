@@ -1,34 +1,18 @@
-go run main.go -n 0 -N 4 -s 0 -S 4 & 
+# --- 設定エリア ---
+TOTAL_NODES=10    # プログラムに伝える全体のノード数 (-N)
+TOTAL_SHARDS=4    # 全体のシャード数 (-S)
 
-go run main.go -n 1 -N 4 -s 0 -S 4 & 
+echo "2026-05-15: ネットワークを起動します (N=$TOTAL_NODES, S=$TOTAL_SHARDS)"
 
-go run main.go -n 2 -N 4 -s 0 -S 4 & 
+# シャードのループ
+for ((s=0; s<TOTAL_SHARDS; s++)); do
+  # ノードのループ (0, 1, 2, 3)
+  for ((n=0; n<NODES_TO_START; n++)); do
+    echo "Starting Shard: $s, Node: $n..."
+    go run main.go -n $n -N $TOTAL_NODES -s $s -S $TOTAL_SHARDS &
+  done
+done
 
-go run main.go -n 3 -N 4 -s 0 -S 4 & 
-
-go run main.go -n 0 -N 4 -s 1 -S 4 & 
-
-go run main.go -n 1 -N 4 -s 1 -S 4 & 
-
-go run main.go -n 2 -N 4 -s 1 -S 4 & 
-
-go run main.go -n 3 -N 4 -s 1 -S 4 & 
-
-go run main.go -n 0 -N 4 -s 2 -S 4 & 
-
-go run main.go -n 1 -N 4 -s 2 -S 4 & 
-
-go run main.go -n 2 -N 4 -s 2 -S 4 & 
-
-go run main.go -n 3 -N 4 -s 2 -S 4 & 
-
-go run main.go -n 0 -N 4 -s 3 -S 4 & 
-
-go run main.go -n 1 -N 4 -s 3 -S 4 & 
-
-go run main.go -n 2 -N 4 -s 3 -S 4 & 
-
-go run main.go -n 3 -N 4 -s 3 -S 4 & 
-
-go run main.go -c -N 4 -S 4 & 
-
+# コントローラーの起動
+echo "Starting Controller..."
+go run main.go -c -N $TOTAL_NODES -S $TOTAL_SHARDS & 
