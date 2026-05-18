@@ -11,6 +11,7 @@ import (
 	"log"
 	"strconv"
 	"time"
+	"blockEmulator/chain"
 )
 
 // simple implementation of pbftHandleModule interface ...
@@ -20,6 +21,7 @@ type SZHBFTPbftExtraHandleMod struct {
 	// pointer to pbft data
 
 	ZoneID uint64
+	LocalChain *chain.BlockChain
 }
 
 // propose request with different types
@@ -58,11 +60,12 @@ func (rphm *SZHBFTPbftExtraHandleMod) HandleinCommit(cmsg *message.Commit) bool 
 	r := rphm.pbftNode.requestPool[string(cmsg.Digest)]
 	// requestType ...
 	block := core.DecodeB(r.Msg.Content)
+	isLocalSZBlock := true
 
 	for _, tx := range block.Body {
 		ssid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Sender)
 		rsid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Recipient)
-		// 1つでも自シャード以外が関わればグローバル！！！要改造
+		// 1つでも自シャード以外が関わればグローバル！！！要改造!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		if ssid != rphm.pbftNode.ShardID || rsid != rphm.pbftNode.ShardID {
             isLocalSZBlock = false
             break

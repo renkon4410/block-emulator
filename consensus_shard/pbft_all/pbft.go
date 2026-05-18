@@ -18,10 +18,7 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
-	"fmt"
 	
-	"github.com/syndtr/goleveldb/leveldb"
-
 	"github.com/ethereum/go-ethereum/core/rawdb"
 	"github.com/ethereum/go-ethereum/ethdb"
 )
@@ -169,15 +166,16 @@ func NewPbftNode(shardID, nodeID uint64, pcc *params.ChainConfig, messageHandleT
 			pbftNode: p,
 		}
 	default:	//SZHBFT
-		localMptDBPath := params.DatabaseWrite_path + fmt.Sprintf("localMptDB/S%d_N%d", p.ShardID, p.NodeID)
-    	localDb, err := leveldb.OpenFile(localMptDBPath, nil)
-    	if err != nil {
-        	log.Panic(err)
-    	}
+		// ★ ローカル台帳用のDBパスを新しく分ける（グローバルMptDBと被らないように）
+		localFp := params.DatabaseWrite_path + "localMptDB/s" + strconv.FormatUint(shardID, 10) + "/n" + strconv.FormatUint(nodeID, 10)
+        localDb, err := rawdb.NewLevelDBDatabase(localFp, 0, 1, "localAccountState", false)
+        if err != nil {
+            log.Panic("cannot new a local ldb", err)
+        }
     	// ローカルチェーンとして初期化 (trueを指定)
     	localChain, err := chain.NewBlockChain(pcc, localDb, true)
     	if err != nil {
-        	log.Panic(err)
+        	log.Panic("cannot new a local blockchain")
     	}
 		p.ihm = &SZHBFTPbftExtraHandleMod{
 			pbftNode: p,

@@ -1,9 +1,9 @@
 {
-  "ConsensusMethod":4,
+  "ConsensusMethod":0,
   
   "PbftViewChangeTimeOut":5000,
 
-  "ExpDataRootDir": "expTest_SZHBFT_50000S10N4I2000",
+  "ExpDataRootDir": "expTest_CLPABroker_3000000S10N4I8000",
 
   "Block_Interval": 2000,
 
@@ -11,8 +11,8 @@
   "BlocksizeInBytes": 20000,
   "UseBlocksizeInBytes": 0,
 
-  "InjectSpeed": 2000,
-  "TotalDataSize": 50000,
+  "InjectSpeed": 8000,
+  "TotalDataSize": 300000,
   "TxBatchSize": 1600,
 
   "BrokerNum": 10,
