@@ -250,25 +250,16 @@ func (bc *BlockChain) AddBlock(b *core.Block) {
 // new a blockchain.
 // the ChainConfig is pre-defined to identify the blockchain; the db is the status trie database in disk
 func NewBlockChain(cc *params.ChainConfig, db ethdb.Database, isLocal bool) (*BlockChain, error) {
-<<<<<<< Updated upstream
 	// fmt.Println("Generating a new blockchain", db)
-	
+
 	// パスをグローバルとローカルでフォルダごと分ける
-=======
-    
-    // パスをグローバルとローカルでフォルダごと分ける
->>>>>>> Stashed changes
-    folderName := "chainDB"
-    if isLocal {
-        folderName = "localChainDB"
-    }
-<<<<<<< Updated upstream
+	folderName := "chainDB"
+	if isLocal {
+		folderName = "localChainDB"
+	}
 
 	chainDBfp := params.DatabaseWrite_path + fmt.Sprintf("%s/S%d_N%d", folderName, cc.ShardID, cc.NodeID)
-	
-=======
-	chainDBfp := params.DatabaseWrite_path + fmt.Sprintf("%s/S%d_N%d", folderName, cc.ShardID, cc.NodeID)
->>>>>>> Stashed changes
+
 	bc := &BlockChain{
 		db:           db,
 		ChainConfig:  cc,
@@ -426,4 +417,103 @@ func (bc *BlockChain) PrintBlockChain() string {
 	res := fmt.Sprintf("%v\n", vals)
 	fmt.Println(res)
 	return res
+}
+
+// SZHBFT専用：ローカルブロックかグローバルブロックのバッチ処理
+func (bc *BlockChain) GenerateSZBlock(miner int32) (*core.Block, *core.Block) {
+	var localTxs []*core.Transaction
+	var globalTxs []*core.Transaction
+
+	bc.Txpool.GetLocked()
+
+	// 1. 受信したTX要求の中身（Input/OutputのSZ）を見て動的に仕分ける
+	limit := bc.ChainConfig.BlockSize
+	var remainQueue []*core.Transaction
+
+	for _, tx := range bc.Txpool.TxQueue {
+		// 処理上限に達したら残りはプールキープ
+		if uint64(len(localTxs)+len(globalTxs)) >= limit {
+			remainQueue = append(remainQueue, tx)
+			continue
+		}
+
+		// 入力(Input)のSZと出力(Output)のSZを特定
+		inputSZ := bc.Get_PartitionMap(tx.Sender)
+		outputSZ := bc.Get_PartitionMap(tx.Recipient)
+
+		// 判定：入力と出力がすべて単一の自SZ内で完結しているか？
+		if inputSZ == bc.ChainConfig.ShardID && outputSZ == bc.ChainConfig.ShardID {
+			// ⭕ ローカルTXとして仕分け
+			localTxs = append(localTxs, tx)
+		} else {
+			// ❌ 複数のSZにまたがるため、グローバルTX（SZ間TX）として仕分け
+			globalTxs = append(globalTxs, tx)
+		}
+	}
+	bc.Txpool.TxQueue = remainQueue
+	bc.Txpool.GetUnlocked()
+
+	// --- バッチ処理の完了とブロック作成 ---
+
+	// グローバルブロックの組み立て（中身があれば既存の仕組みで生成）
+	var globalBlock *core.Block = nil
+	if len(globalTxs) > 0 {
+		bhGlobal := &core.BlockHeader{
+			ParentBlockHash: bc.CurrentBlock.Hash,
+			Number:          bc.CurrentBlock.Header.Number + 1,
+			Time:            time.Now(),
+		}
+		rtGlobal := bc.GetUpdateStatusTrie(globalTxs)
+		bhGlobal.StateRoot = rtGlobal.Bytes()
+		bhGlobal.TxRoot = GetTxTreeRoot(globalTxs)
+		bhGlobal.Bloom = *GetBloomFilter(globalTxs)
+		bhGlobal.Miner = miner
+		globalBlock = core.NewBlock(bhGlobal, globalTxs)
+		globalBlock.Hash = globalBlock.Header.Hash()
+	}
+
+	// ローカルブロックの組み立て（中身があれば既存の仕組みで生成）
+	var localBlock *core.Block = nil
+	if len(localTxs) > 0 {
+		bhLocal := &core.BlockHeader{
+			ParentBlockHash: bc.CurrentBlock.Hash,
+			Number:          bc.CurrentBlock.Header.Number + 1,
+			Time:            time.Now(),
+		}
+		bhLocal.StateRoot = bc.CurrentBlock.Header.StateRoot
+		bhLocal.TxRoot = GetTxTreeRoot(localTxs)
+		bhLocal.Bloom = *GetBloomFilter(localTxs)
+		bhLocal.Miner = miner
+		localBlock = core.NewBlock(bhLocal, localTxs)
+		localBlock.Hash = localBlock.Header.Hash()
+	}
+
+	// 2つのブロック（片方、あるいは両方）を同時に返す！
+	return localBlock, globalBlock
+}
+
+// GetRelatedShards : グローバルブロックの中身をスキャンし、関係する全シャード(SZ)の重複なしリストを返す
+func (bc *BlockChain) GetRelatedShards(block *core.Block) []uint64 {
+	shardMap := make(map[uint64]bool)
+
+	// 提案者である自分自身のシャードも関係者なのでリストに入れておく
+	shardMap[bc.ChainConfig.ShardID] = true
+
+	// ブロック内の全トランザクションをスキャンして、入力と出力の両方のシャードIDをマップに記録する
+	for _, tx := range block.Body {
+		inputSZ := bc.Get_PartitionMap(tx.Sender)
+		outputSZ := bc.Get_PartitionMap(tx.Recipient)
+
+		// Mapの特性（同じキーは上書きされる）を利用して重複を弾く
+		shardMap[inputSZ] = true
+		shardMap[outputSZ] = true
+	}
+
+	// Mapのキーだけを抽出して、綺麗な配列（スライス）に変換する
+	var relatedShards []uint64
+	for shardID := range shardMap {
+		relatedShards = append(relatedShards, shardID)
+	}
+
+	return relatedShards
 }

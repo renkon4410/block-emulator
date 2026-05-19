@@ -166,17 +166,12 @@ func NewPbftNode(shardID, nodeID uint64, pcc *params.ChainConfig, messageHandleT
 			pbftNode: p,
 		}
 	default:	//SZHBFT
-<<<<<<< Updated upstream
-		// ★ ローカル台帳用のDBパスを新しく分ける（グローバルMptDBと被らないように）
-=======
 	    // localChain 用のDBと localChain の生成
->>>>>>> Stashed changes
 		localFp := params.DatabaseWrite_path + "localMptDB/s" + strconv.FormatUint(shardID, 10) + "/n" + strconv.FormatUint(nodeID, 10)
         localDb, err := rawdb.NewLevelDBDatabase(localFp, 0, 1, "localAccountState", false)
         if err != nil {
             log.Panic("cannot new a local ldb", err)
         }
-<<<<<<< Updated upstream
     	// ローカルチェーンとして初期化 (trueを指定)
     	localChain, err := chain.NewBlockChain(pcc, localDb, true)
     	if err != nil {
@@ -186,18 +181,6 @@ func NewPbftNode(shardID, nodeID uint64, pcc *params.ChainConfig, messageHandleT
 			pbftNode: p,
 			ZoneID: p.ShardID,
 			LocalChain: localChain,
-=======
-		localChain, err := chain.NewBlockChain(pcc, localDb, true)
-		if err != nil {
-			log.Panic("cannot new a local blockchain")
-		}
-
-		// ハンドルモジュールにだけ localChain を渡す（pbftNodeの構造体にはlocalChainは定義しない）
-		p.ihm = &SZHBFTPbftExtraHandleMod{
-			pbftNode: p,
-			ZoneID: p.ShardID,
-			LocalChain: localChain, // ローカル台帳を渡す
->>>>>>> Stashed changes
 		}
 		p.ohm = &SZHBFTOutsideModule{
 			pbftNode: p,

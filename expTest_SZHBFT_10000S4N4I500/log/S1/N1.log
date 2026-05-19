@@ -1,0 +1,446 @@
+S1N1: 2026/05/19 16:01:08 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:08 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:08 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:08 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:08 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:08 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:08 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:08 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 1 
+S1N1: 2026/05/19 16:01:09 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 1
+S1N1: 2026/05/19 16:01:09 messageHandle.go:271: S1N1: this round of pbft 1 is end 
+S1N1: 2026/05/19 16:01:10 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:10 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:10 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:10 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:10 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:10 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:10 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:10 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:10 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:10 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:10 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:10 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 2 
+S1N1: 2026/05/19 16:01:10 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 2
+S1N1: 2026/05/19 16:01:10 messageHandle.go:271: S1N1: this round of pbft 2 is end 
+S1N1: 2026/05/19 16:01:12 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:12 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:12 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:12 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:12 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:12 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:12 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:12 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:12 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:12 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:12 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:12 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 3 
+S1N1: 2026/05/19 16:01:12 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 3
+S1N1: 2026/05/19 16:01:12 messageHandle.go:271: S1N1: this round of pbft 3 is end 
+S1N1: 2026/05/19 16:01:14 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:14 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:14 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:14 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:14 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:14 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:14 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:14 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:14 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:14 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:14 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:14 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 4 
+S1N1: 2026/05/19 16:01:14 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 4
+S1N1: 2026/05/19 16:01:14 messageHandle.go:271: S1N1: this round of pbft 4 is end 
+S1N1: 2026/05/19 16:01:16 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:16 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:16 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:16 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:16 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:16 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:16 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:16 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:16 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:16 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:16 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:16 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 5 
+S1N1: 2026/05/19 16:01:16 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 5
+S1N1: 2026/05/19 16:01:16 messageHandle.go:271: S1N1: this round of pbft 5 is end 
+S1N1: 2026/05/19 16:01:18 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:18 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:18 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:18 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:18 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:18 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:18 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:18 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:18 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:18 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:18 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:18 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 6 
+S1N1: 2026/05/19 16:01:18 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 6
+S1N1: 2026/05/19 16:01:18 messageHandle.go:271: S1N1: this round of pbft 6 is end 
+S1N1: 2026/05/19 16:01:20 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:20 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:20 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:20 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:20 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:20 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:20 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:20 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:20 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:20 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:20 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:20 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 7 
+S1N1: 2026/05/19 16:01:20 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 7
+S1N1: 2026/05/19 16:01:20 messageHandle.go:271: S1N1: this round of pbft 7 is end 
+S1N1: 2026/05/19 16:01:22 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:22 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:22 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:22 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:22 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:22 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:22 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:22 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:22 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:22 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:22 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:22 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 8 
+S1N1: 2026/05/19 16:01:22 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 8
+S1N1: 2026/05/19 16:01:22 messageHandle.go:271: S1N1: this round of pbft 8 is end 
+S1N1: 2026/05/19 16:01:24 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:24 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:24 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:24 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:24 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:24 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:24 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:24 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:24 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:24 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:24 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:24 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 9 
+S1N1: 2026/05/19 16:01:24 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 9
+S1N1: 2026/05/19 16:01:24 messageHandle.go:271: S1N1: this round of pbft 9 is end 
+S1N1: 2026/05/19 16:01:26 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:26 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:26 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:26 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:26 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:26 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:26 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:26 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:26 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:26 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:26 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:26 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 10 
+S1N1: 2026/05/19 16:01:26 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 10
+S1N1: 2026/05/19 16:01:26 messageHandle.go:271: S1N1: this round of pbft 10 is end 
+S1N1: 2026/05/19 16:01:28 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:28 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:28 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:28 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:28 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:28 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:28 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:28 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:28 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:28 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:28 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:28 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 11 
+S1N1: 2026/05/19 16:01:28 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 11
+S1N1: 2026/05/19 16:01:28 messageHandle.go:271: S1N1: this round of pbft 11 is end 
+S1N1: 2026/05/19 16:01:30 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:30 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:30 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:30 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:30 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:30 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:30 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:30 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:30 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:30 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:30 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:30 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 12 
+S1N1: 2026/05/19 16:01:30 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 12
+S1N1: 2026/05/19 16:01:30 messageHandle.go:271: S1N1: this round of pbft 12 is end 
+S1N1: 2026/05/19 16:01:32 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:32 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:32 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:32 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:32 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:32 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:32 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:32 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:32 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:32 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:32 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:32 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 13 
+S1N1: 2026/05/19 16:01:32 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 13
+S1N1: 2026/05/19 16:01:32 messageHandle.go:271: S1N1: this round of pbft 13 is end 
+S1N1: 2026/05/19 16:01:34 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:34 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:34 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:34 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:34 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:34 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:34 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:34 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:34 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:34 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:34 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:34 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 14 
+S1N1: 2026/05/19 16:01:34 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 14
+S1N1: 2026/05/19 16:01:34 messageHandle.go:271: S1N1: this round of pbft 14 is end 
+S1N1: 2026/05/19 16:01:36 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:36 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:36 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:36 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:36 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:36 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:36 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:36 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:36 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:36 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:36 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:36 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 15 
+S1N1: 2026/05/19 16:01:36 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 15
+S1N1: 2026/05/19 16:01:36 messageHandle.go:271: S1N1: this round of pbft 15 is end 
+S1N1: 2026/05/19 16:01:38 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:38 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:38 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:38 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:38 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:38 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:38 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:38 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:38 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:38 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:38 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:38 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 16 
+S1N1: 2026/05/19 16:01:38 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 16
+S1N1: 2026/05/19 16:01:38 messageHandle.go:271: S1N1: this round of pbft 16 is end 
+S1N1: 2026/05/19 16:01:40 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:40 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:40 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:40 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:40 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:40 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:40 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:40 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:40 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:40 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:40 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:40 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 17 
+S1N1: 2026/05/19 16:01:40 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 17
+S1N1: 2026/05/19 16:01:40 messageHandle.go:271: S1N1: this round of pbft 17 is end 
+S1N1: 2026/05/19 16:01:42 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:42 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:42 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:42 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:42 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:42 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:42 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:42 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:42 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:42 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:42 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:42 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 18 
+S1N1: 2026/05/19 16:01:42 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 18
+S1N1: 2026/05/19 16:01:42 messageHandle.go:271: S1N1: this round of pbft 18 is end 
+S1N1: 2026/05/19 16:01:44 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:44 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:44 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:44 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:44 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:44 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:44 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:44 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:44 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:44 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:44 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:44 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 19 
+S1N1: 2026/05/19 16:01:44 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 19
+S1N1: 2026/05/19 16:01:44 messageHandle.go:271: S1N1: this round of pbft 19 is end 
+S1N1: 2026/05/19 16:01:46 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:46 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:46 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:46 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:46 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:46 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:46 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:46 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:46 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:46 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:46 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:46 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 20 
+S1N1: 2026/05/19 16:01:46 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 20
+S1N1: 2026/05/19 16:01:46 messageHandle.go:271: S1N1: this round of pbft 20 is end 
+S1N1: 2026/05/19 16:01:48 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:48 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:48 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:48 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:48 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:48 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:48 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:48 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:48 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:48 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:48 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:48 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 21 
+S1N1: 2026/05/19 16:01:48 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 21
+S1N1: 2026/05/19 16:01:48 messageHandle.go:271: S1N1: this round of pbft 21 is end 
+S1N1: 2026/05/19 16:01:50 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:50 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:50 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:50 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:50 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:50 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:50 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:50 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:50 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:50 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:50 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:50 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 22 
+S1N1: 2026/05/19 16:01:50 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 22
+S1N1: 2026/05/19 16:01:50 messageHandle.go:271: S1N1: this round of pbft 22 is end 
+S1N1: 2026/05/19 16:01:52 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:52 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:52 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:52 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:52 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:52 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:52 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:52 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:52 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:52 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:52 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:52 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 23 
+S1N1: 2026/05/19 16:01:52 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 23
+S1N1: 2026/05/19 16:01:52 messageHandle.go:271: S1N1: this round of pbft 23 is end 
+S1N1: 2026/05/19 16:01:54 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:54 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:54 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:54 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:54 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:54 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:54 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:54 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:54 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:54 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:54 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:54 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 24 
+S1N1: 2026/05/19 16:01:54 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 24
+S1N1: 2026/05/19 16:01:54 messageHandle.go:271: S1N1: this round of pbft 24 is end 
+S1N1: 2026/05/19 16:01:56 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:56 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:56 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:56 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:56 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:56 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:56 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:56 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:56 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:56 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:01:56 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:56 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 25 
+S1N1: 2026/05/19 16:01:56 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 25
+S1N1: 2026/05/19 16:01:56 messageHandle.go:271: S1N1: this round of pbft 25 is end 
+S1N1: 2026/05/19 16:01:58 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:01:58 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:01:58 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:58 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:58 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:58 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:01:58 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:01:58 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:01:58 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:01:58 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:01:58 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:01:58 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 26 
+S1N1: 2026/05/19 16:01:58 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 26
+S1N1: 2026/05/19 16:01:58 messageHandle.go:271: S1N1: this round of pbft 26 is end 
+S1N1: 2026/05/19 16:02:00 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:02:00 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:02:00 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:00 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:00 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:00 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:02:00 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:00 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:02:00 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:02:00 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:02:00 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:02:00 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 27 
+S1N1: 2026/05/19 16:02:00 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 27
+S1N1: 2026/05/19 16:02:00 messageHandle.go:271: S1N1: this round of pbft 27 is end 
+S1N1: 2026/05/19 16:02:02 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:02:02 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:02:02 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:02 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:02 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:02 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:02:02 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:02 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:02:02 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:02:02 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:02:02 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:02:02 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 28 
+S1N1: 2026/05/19 16:02:02 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 28
+S1N1: 2026/05/19 16:02:02 messageHandle.go:271: S1N1: this round of pbft 28 is end 
+S1N1: 2026/05/19 16:02:04 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:02:04 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:02:04 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:04 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:04 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:04 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:04 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:02:04 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:02:04 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:02:04 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:02:04 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:02:04 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 29 
+S1N1: 2026/05/19 16:02:04 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 29
+S1N1: 2026/05/19 16:02:04 messageHandle.go:271: S1N1: this round of pbft 29 is end 
+S1N1: 2026/05/19 16:02:06 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:02:06 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:02:06 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:06 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:06 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:06 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:02:06 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:06 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:02:06 messageHandle.go:233: S1N1 received the Commit from ...1
+S1N1: 2026/05/19 16:02:06 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:02:06 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:02:06 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 30 
+S1N1: 2026/05/19 16:02:06 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 30
+S1N1: 2026/05/19 16:02:06 messageHandle.go:271: S1N1: this round of pbft 30 is end 
+S1N1: 2026/05/19 16:02:08 pbftInside_moduleSZHBFT.go:102: S1N1 : the pre-prepare message is correct, putting it into the RequestPool. 
+S1N1: 2026/05/19 16:02:08 messageHandle.go:141: S1N1 : has broadcast the prepare message 
+S1N1: 2026/05/19 16:02:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:08 messageHandle.go:152: S1N1 : received the Prepare ...
+S1N1: 2026/05/19 16:02:08 messageHandle.go:188: S1N1 : is going to commit
+S1N1: 2026/05/19 16:02:08 messageHandle.go:203: S1N1 : commit is broadcast
+S1N1: 2026/05/19 16:02:08 messageHandle.go:233: S1N1 received the Commit from ...0
+S1N1: 2026/05/19 16:02:08 messageHandle.go:233: S1N1 received the Commit from ...3
+S1N1: 2026/05/19 16:02:08 messageHandle.go:233: S1N1 received the Commit from ...2
+S1N1: 2026/05/19 16:02:08 pbftInside_moduleSZHBFT.go:147: S1N1 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 31 
+S1N1: 2026/05/19 16:02:08 pbftInside_moduleSZHBFT.go:152: S1N1 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 31
+S1N1: 2026/05/19 16:02:08 messageHandle.go:271: S1N1: this round of pbft 31 is end 
+S1N1: 2026/05/19 16:02:13 view_change.go:53: Received view change message from Node 3
+S1N1: 2026/05/19 16:02:13 view_change.go:20: Main node is time out, now trying to view change. 
+S1N1: 2026/05/19 16:02:13 view_change.go:37: View change message is broadcasted. 
+S1N1: 2026/05/19 16:02:13 view_change.go:53: Received view change message from Node 1
+S1N1: 2026/05/19 16:02:14 view_change.go:53: Received view change message from Node 0
+S1N1: 2026/05/19 16:02:14 view_change.go:85: Received new view message from Node 1
+S1N1: 2026/05/19 16:02:14 view_change.go:85: Received new view message from Node 2
+S1N1: 2026/05/19 16:02:14 view_change.go:85: Received new view message from Node 3
+S1N1: 2026/05/19 16:02:14 view_change.go:93: New view is updated.
+S1N1: 2026/05/19 16:02:14 view_change.go:85: Received new view message from Node 0
+S1N1: 2026/05/19 16:02:15 messageHandle.go:54: S1N1 get sequenceLock locked, now trying to propose...
+S1N1: 2026/05/19 16:02:15 messageHandle.go:61: S1N1 put the request into the pool ...

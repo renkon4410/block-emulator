@@ -1,6 +1,6 @@
 # --- 設定エリア ---
 TOTAL_NODES=4    # プログラムに伝える全体のノード数 (-N)
-TOTAL_SHARDS=10    # 全体のシャード数 (-S)
+TOTAL_SHARDS=4    # 全体のシャード数 (-S)
 
 echo "2026-05-15: ネットワークを起動します (N=$TOTAL_NODES, S=$TOTAL_SHARDS)"
 
