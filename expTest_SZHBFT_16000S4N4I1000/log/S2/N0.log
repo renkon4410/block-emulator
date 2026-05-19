@@ -1,0 +1,269 @@
+S2N0: 2026/05/19 11:02:43 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 286 
+S2N0: 2026/05/19 11:02:44 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 120 
+S2N0: 2026/05/19 11:02:45 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 409 
+S2N0: 2026/05/19 11:02:46 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:02:46 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 217 
+S2N0: 2026/05/19 11:02:46 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:02:46 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:02:46 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:02:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:46 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:02:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:46 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:02:46 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/19 11:02:46 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:02:46 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:02:46 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:02:47 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 17
+S2N0: 2026/05/19 11:02:47 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:47 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 17 
+S2N0: 2026/05/19 11:02:47 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:02:47 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:02:47 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:02:47 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:02:47 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 17
+S2N0: 2026/05/19 11:02:47 messageHandle.go:271: S2N0: this round of pbft 17 is end 
+S2N0: 2026/05/19 11:02:47 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:02:47 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:47 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 17
+S2N0: 2026/05/19 11:02:47 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:47 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 473 
+S2N0: 2026/05/19 11:02:48 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:02:48 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:02:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:48 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:02:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:48 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:02:48 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:02:48 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:02:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:48 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:02:48 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/19 11:02:48 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/19 11:02:48 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:02:48 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 118 
+S2N0: 2026/05/19 11:02:48 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 18
+S2N0: 2026/05/19 11:02:48 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:48 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 18 
+S2N0: 2026/05/19 11:02:48 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:02:48 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:02:48 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:02:48 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:02:48 messageHandle.go:271: S2N0: this round of pbft 18 is end 
+S2N0: 2026/05/19 11:02:48 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:02:49 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 18
+S2N0: 2026/05/19 11:02:49 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:49 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 18
+S2N0: 2026/05/19 11:02:49 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:49 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 39 
+S2N0: 2026/05/19 11:02:50 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:02:50 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:02:50 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:02:50 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:02:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:50 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:02:50 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:02:50 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:02:50 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/19 11:02:50 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:02:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:50 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:02:50 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 19 
+S2N0: 2026/05/19 11:02:50 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:02:50 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:02:50 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:02:50 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:02:50 messageHandle.go:271: S2N0: this round of pbft 19 is end 
+S2N0: 2026/05/19 11:02:50 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:02:50 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 19
+S2N0: 2026/05/19 11:02:50 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:50 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 165 
+S2N0: 2026/05/19 11:02:51 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 19
+S2N0: 2026/05/19 11:02:51 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:51 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 19
+S2N0: 2026/05/19 11:02:51 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:52 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 208 
+S2N0: 2026/05/19 11:02:52 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:02:52 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:02:52 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:02:52 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:02:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:52 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:02:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:52 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:02:52 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/19 11:02:52 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/19 11:02:52 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:02:52 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:02:52 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 20
+S2N0: 2026/05/19 11:02:52 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:52 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 20 
+S2N0: 2026/05/19 11:02:52 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:02:52 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:02:52 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:02:52 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:02:52 messageHandle.go:271: S2N0: this round of pbft 20 is end 
+S2N0: 2026/05/19 11:02:52 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:02:53 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 20
+S2N0: 2026/05/19 11:02:53 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:53 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 140 
+S2N0: 2026/05/19 11:02:53 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 20
+S2N0: 2026/05/19 11:02:53 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:54 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 369 
+S2N0: 2026/05/19 11:02:54 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:02:54 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:02:54 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:02:54 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:02:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:54 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:54 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:02:54 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:02:54 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/19 11:02:54 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:02:54 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:02:54 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:02:54 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 21
+S2N0: 2026/05/19 11:02:54 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:54 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 21 
+S2N0: 2026/05/19 11:02:54 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:02:54 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:02:54 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:02:54 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:02:55 messageHandle.go:271: S2N0: this round of pbft 21 is end 
+S2N0: 2026/05/19 11:02:55 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:02:55 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 21
+S2N0: 2026/05/19 11:02:55 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:55 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 21
+S2N0: 2026/05/19 11:02:55 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:55 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 282 
+S2N0: 2026/05/19 11:02:56 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 247 
+S2N0: 2026/05/19 11:02:56 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:02:56 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:02:56 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:02:56 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:02:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:56 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:02:56 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:56 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:02:56 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:02:56 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:02:56 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/19 11:02:56 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:02:56 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 22 
+S2N0: 2026/05/19 11:02:56 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:02:56 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:02:56 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:02:56 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:02:56 messageHandle.go:271: S2N0: this round of pbft 22 is end 
+S2N0: 2026/05/19 11:02:56 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:02:56 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 22
+S2N0: 2026/05/19 11:02:56 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:57 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 22
+S2N0: 2026/05/19 11:02:57 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:57 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 22
+S2N0: 2026/05/19 11:02:57 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:57 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 198 
+S2N0: 2026/05/19 11:02:58 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 221 
+S2N0: 2026/05/19 11:02:58 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:02:58 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:02:58 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:02:58 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:02:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:58 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:02:58 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:02:58 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:02:58 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:02:58 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/19 11:02:58 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:02:58 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:02:58 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 23
+S2N0: 2026/05/19 11:02:58 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:58 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 23 
+S2N0: 2026/05/19 11:02:58 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:02:58 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:02:58 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:02:58 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:02:58 messageHandle.go:271: S2N0: this round of pbft 23 is end 
+S2N0: 2026/05/19 11:02:58 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:02:59 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 23
+S2N0: 2026/05/19 11:02:59 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:59 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 23
+S2N0: 2026/05/19 11:02:59 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:02:59 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 43 
+S2N0: 2026/05/19 11:03:00 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 25 
+S2N0: 2026/05/19 11:03:00 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:03:00 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:03:00 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:03:00 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:03:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:00 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:03:00 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:00 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:03:00 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/19 11:03:00 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:03:00 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:03:00 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:03:00 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 24
+S2N0: 2026/05/19 11:03:00 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:03:01 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 24 
+S2N0: 2026/05/19 11:03:01 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:03:01 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:03:01 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:03:01 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:03:01 messageHandle.go:271: S2N0: this round of pbft 24 is end 
+S2N0: 2026/05/19 11:03:01 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:03:01 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 24
+S2N0: 2026/05/19 11:03:01 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:03:01 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 24
+S2N0: 2026/05/19 11:03:01 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:03:01 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 54 
+S2N0: 2026/05/19 11:03:02 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 183 
+S2N0: 2026/05/19 11:03:02 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/19 11:03:02 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/19 11:03:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:02 pbftInside_moduleSZHBFT.go:48: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/19 11:03:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:02 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/19 11:03:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:02 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/19 11:03:02 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/19 11:03:02 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/19 11:03:02 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/19 11:03:02 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/19 11:03:02 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/19 11:03:02 pbftInside_moduleSZHBFT.go:99: S2N0 : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... 
+S2N0: 2026/05/19 11:03:02 pbftInside_moduleSZHBFT.go:106: S2N0 : main node is trying to send relay txs at height = 25 
+S2N0: 2026/05/19 11:03:02 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/19 11:03:02 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/19 11:03:02 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/19 11:03:02 pbftInside_moduleSZHBFT.go:161: S2N0 : sended excuted txs
+S2N0: 2026/05/19 11:03:02 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 25
+S2N0: 2026/05/19 11:03:02 messageHandle.go:271: S2N0: this round of pbft 25 is end 
+S2N0: 2026/05/19 11:03:02 messageHandle.go:281: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/19 11:03:02 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:03:02 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 25
+S2N0: 2026/05/19 11:03:02 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:03:03 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 25
+S2N0: 2026/05/19 11:03:03 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/19 11:03:03 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 7 
+2:19 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/15 00:22:19 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 9
+S2N0: 2026/05/15 00:22:19 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/15 00:22:19 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 9
+S2N0: 2026/05/15 00:22:19 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/15 00:22:19 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 7 

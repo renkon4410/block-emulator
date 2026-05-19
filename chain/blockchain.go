@@ -250,16 +250,25 @@ func (bc *BlockChain) AddBlock(b *core.Block) {
 // new a blockchain.
 // the ChainConfig is pre-defined to identify the blockchain; the db is the status trie database in disk
 func NewBlockChain(cc *params.ChainConfig, db ethdb.Database, isLocal bool) (*BlockChain, error) {
+<<<<<<< Updated upstream
 	// fmt.Println("Generating a new blockchain", db)
 	
 	// パスをグローバルとローカルでフォルダごと分ける
+=======
+    
+    // パスをグローバルとローカルでフォルダごと分ける
+>>>>>>> Stashed changes
     folderName := "chainDB"
     if isLocal {
         folderName = "localChainDB"
     }
+<<<<<<< Updated upstream
 
 	chainDBfp := params.DatabaseWrite_path + fmt.Sprintf("%s/S%d_N%d", folderName, cc.ShardID, cc.NodeID)
 	
+=======
+	chainDBfp := params.DatabaseWrite_path + fmt.Sprintf("%s/S%d_N%d", folderName, cc.ShardID, cc.NodeID)
+>>>>>>> Stashed changes
 	bc := &BlockChain{
 		db:           db,
 		ChainConfig:  cc,

@@ -27,7 +27,7 @@ func (rrom *RawRelayOutsideModule) HandleMessageOutsidePBFT(msgType message.Mess
 	return true
 }
 
-// receive relay transaction, which is for cross shard txs
+// CST用のリレーTXの受信：receive relay transaction, which is for cross shard txs
 func (rrom *RawRelayOutsideModule) handleRelay(content []byte) {
 	relay := new(message.Relay)
 	err := json.Unmarshal(content, relay)

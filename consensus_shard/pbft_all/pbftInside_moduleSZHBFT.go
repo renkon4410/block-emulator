@@ -2,6 +2,7 @@
 package pbft_all
 
 import (
+	"blockEmulator/chain"
 	"blockEmulator/core"
 	"blockEmulator/message"
 	"blockEmulator/networks"
@@ -19,6 +20,9 @@ import (
 type SZHBFTPbftExtraHandleMod struct {
 	pbftNode *PbftConsensusNode
 	// pointer to pbft data
+
+	LocalChain *chain.BlockChain
+	// LocalChainのポインタ
 
 	ZoneID uint64
 	LocalChain *chain.BlockChain
@@ -60,6 +64,7 @@ func (rphm *SZHBFTPbftExtraHandleMod) HandleinCommit(cmsg *message.Commit) bool 
 	r := rphm.pbftNode.requestPool[string(cmsg.Digest)]
 	// requestType ...
 	block := core.DecodeB(r.Msg.Content)
+<<<<<<< Updated upstream
 	isLocalSZBlock := true
 
 	for _, tx := range block.Body {
@@ -84,6 +89,46 @@ func (rphm *SZHBFTPbftExtraHandleMod) HandleinCommit(cmsg *message.Commit) bool 
 	rphm.pbftNode.CurChain.AddBlock(block)
 	rphm.pbftNode.pl.Plog.Printf("S%dN%d : added the block %d... \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number)
 	rphm.pbftNode.CurChain.PrintBlockChain()
+=======
+	
+	// ============================================================
+    // ★【新設】SZ内完結（ローカル）か、SZ間（グローバル）かの判定
+    // ============================================================
+    isLocalSZBlock := true
+    for _, tx := range block.Body {
+        ssid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Sender)
+        rsid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Recipient)
+        // 送信元と送信先がどちらも自シャード（SZ）ではないものが1つでもあればグローバル
+        if ssid != rphm.pbftNode.ShardID || rsid != rphm.pbftNode.ShardID {
+            isLocalSZBlock = false
+            break
+        }
+    }
+
+    if isLocalSZBlock {
+        // --------------------------------------------------------
+        // ①【SZ内完結ルート】EIGツリーPBFTを経てローカル台帳に記録
+        // --------------------------------------------------------
+        rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。height = %d \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number)
+        
+        // ★【ココ！】通常のCurChainではなく、ローカル専用の台帳（LocalChain等）に保存する
+        // ※ 構造体にLocalChain（ローカル台帳）が定義されている想定
+        rphm.LocalChain.AddBlock(block) 
+        
+        rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Local] ローカル台帳への書き込み完了。\n")
+        
+        // SZ内完結なので、他シャードへの「リレー（RelayMsgSend）」は一切行わずにここで正常終了（return）する！
+        return true
+    }
+
+    // --------------------------------------------------------
+    // ②【SZ間ルート】これまで通りのグローバル台帳への記録 ＆ リレー送信
+    // --------------------------------------------------------
+    rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
+    rphm.pbftNode.CurChain.AddBlock(block)
+    rphm.pbftNode.CurChain.PrintBlockChain()
+	// =============================================================
+>>>>>>> Stashed changes
 
 	// now try to relay txs to other shards (for main nodes)
 	if rphm.pbftNode.NodeID == uint64(rphm.pbftNode.view.Load()) {

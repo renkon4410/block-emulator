@@ -25,15 +25,15 @@ func (rrom *SZHBFTOutsideModule) HandleMessageOutsidePBFT(msgType message.Messag
         }
         senderShardID := relay.SenderShardID
         
-        // ゾーン判定 
-        if (senderShardID / 2) == (rrom.ZoneID) {
-            // ★【Zone内：高速ルート】
-            log.Println(">>> [SZHBFT] ゾーン内の仲間からリレーが来た！爆速で処理する準備...")
-            rrom.handleIntraZoneRelay(content) // 新しく作る高速化関数
+        // ゾーン判定 （シャードID）で分岐
+        if (senderShardID == rrom.ZoneID) {
+            // 【ゾーン内】
+            log.Println(">>> [SZHBFT] ゾーン内リレー")
+            rrom.handleInsideZoneRelay(content) // EIGツリーPBFT
         } else {
-            // ★【Zone外：通常ルート】
-            log.Println(">>> [SZHBFT] ゾーン外からのリレー。慎重に（Relayモードと同じく）処理")
-            rrom.handleRelay(content) // 既存の重い処理
+            // 【Zone外】
+            log.Println(">>> [SZHBFT] ゾーン外リレー")
+            rrom.handleOutsideZoneRelay(content) // グローバルPBFT
         }
 	case message.CRelayWithProof:
 		rrom.handleRelayWithProof(content)
@@ -44,7 +44,7 @@ func (rrom *SZHBFTOutsideModule) HandleMessageOutsidePBFT(msgType message.Messag
 	return true
 }
 
-func (rrom *SZHBFTOutsideModule) handleIntraZoneRelay(content []byte) {
+func (rrom *SZHBFTOutsideModule) handleInsideZoneRelay(content []byte) {
 	relay := new(message.Relay)
 	err := json.Unmarshal(content, relay)
 	if err != nil {
@@ -59,7 +59,7 @@ func (rrom *SZHBFTOutsideModule) handleIntraZoneRelay(content []byte) {
 }
 
 // receive relay transaction, which is for cross shard txs
-func (rrom *SZHBFTOutsideModule) handleRelay(content []byte) {
+func (rrom *SZHBFTOutsideModule) handleOutsideZoneRelay(content []byte) {
 	relay := new(message.Relay)
 	err := json.Unmarshal(content, relay)
 	if err != nil {

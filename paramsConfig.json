@@ -3,7 +3,11 @@
   
   "PbftViewChangeTimeOut":5000,
 
+<<<<<<< Updated upstream
   "ExpDataRootDir": "expTest_0000",
+=======
+  "ExpDataRootDir": "expTest_SZHBFT_16000S4N4I1000",
+>>>>>>> Stashed changes
 
   "Block_Interval": 2000,
 
@@ -11,8 +15,13 @@
   "BlocksizeInBytes": 20000,
   "UseBlocksizeInBytes": 0,
 
+<<<<<<< Updated upstream
   "InjectSpeed": 8000,
   "TotalDataSize": 300000,
+=======
+  "InjectSpeed": 1000,
+  "TotalDataSize":16000,
+>>>>>>> Stashed changes
   "TxBatchSize": 1600,
 
   "BrokerNum": 10,

@@ -238,7 +238,8 @@ func (p *PbftConsensusNode) handleCommit(content []byte) {
 	defer p.lock.Unlock()
 
 	if uint64(cnt) >= 2*p.malicious_nums+1 && !p.isReply[string(cmsg.Digest)] {
-		p.pl.Plog.Printf("S%dN%d : has received 2f + 1 commits ... \n", p.ShardID, p.NodeID)
+		// p.pl.Plog.Printf("S%dN%d : has received 2f + 1 commits ... \n", p.ShardID, p.NodeID)
+
 		// if this node is left behind, so it need to requst blocks
 		if _, ok := p.requestPool[string(cmsg.Digest)]; !ok {
 			p.isReply[string(cmsg.Digest)] = true

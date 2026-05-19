@@ -38,6 +38,7 @@
 16:23:53.413561 table@remove removed @7
 16:23:53.418781 table@remove removed @5
 16:23:53.423807 table@remove removed @3
+<<<<<<< Updated upstream
 =============== May 15, 2026 (JST) ===============
 09:30:43.611153 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
 09:30:43.677719 version@stat F·[0 7] S·13MiB[0B 13MiB] Sc·[0.00 0.14]
@@ -48,3 +49,15 @@
 09:30:47.308266 version@stat F·[1 7] S·16MiB[2MiB 13MiB] Sc·[0.25 0.14]
 09:30:47.462066 db@janitor F·10 G·0
 09:30:47.463475 db@open done T·3.777443231s
+=======
+=============== May 14, 2026 (JST) ===============
+18:46:21.796375 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:46:21.827284 version@stat F·[0 7] S·13MiB[0B 13MiB] Sc·[0.00 0.14]
+18:46:21.830238 db@open opening
+18:46:21.839225 journal@recovery F·1
+18:46:21.843578 journal@recovery recovering @8
+18:46:22.937597 memdb@flush created L0@17 N·18603 S·2MiB "\x00\x01\x89..\xa0\xee\xeb,v92690":"\xff\xfb\xaf..\x979p,v102766"
+18:46:22.941672 version@stat F·[1 7] S·16MiB[2MiB 13MiB] Sc·[0.25 0.14]
+18:46:23.007569 db@janitor F·10 G·0
+18:46:23.008232 db@open done T·1.176805269s
+>>>>>>> Stashed changes
