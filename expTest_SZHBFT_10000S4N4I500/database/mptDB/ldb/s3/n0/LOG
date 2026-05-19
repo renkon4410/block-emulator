@@ -1,6 +1,16 @@
-=============== May 19, 2026 (JST) ===============
-16:01:01.070493 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-16:01:01.180200 db@open opening
-16:01:01.195789 version@stat F·[] S·0B[] Sc·[]
-16:01:01.228450 db@janitor F·2 G·0
-16:01:01.231251 db@open done T·49.827306ms
+=============== May 20, 2026 (JST) ===============
+00:08:00.108428 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:08:00.167999 db@open opening
+00:08:00.175064 version@stat F·[] S·0B[] Sc·[]
+00:08:00.186262 db@janitor F·2 G·0
+00:08:00.186939 db@open done T·18.418778ms
+=============== May 20, 2026 (JST) ===============
+00:09:59.624610 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:09:59.668276 version@stat F·[] S·0B[] Sc·[]
+00:09:59.671918 db@open opening
+00:09:59.679521 journal@recovery F·1
+00:09:59.681351 journal@recovery recovering @1
+00:09:59.769957 memdb@flush created L0@2 N·1009 S·122KiB "\x00\t\xda..\xaabn,v259":"\xff\xf7 ..\xab\x98\xf1,v410"
+00:09:59.788158 version@stat F·[1] S·122KiB[122KiB] Sc·[0.25]
+00:09:59.894674 db@janitor F·3 G·0
+00:09:59.896696 db@open done T·223.627313ms

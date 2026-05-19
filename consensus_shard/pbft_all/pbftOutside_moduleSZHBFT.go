@@ -125,8 +125,7 @@ func (rrom *SZHBFTOutsideModule) handleInjectTx(content []byte) {
 	rrom.pbftNode.pl.Plog.Printf("S%dN%d : has handled injected txs msg, txs: %d \n", rrom.pbftNode.ShardID, rrom.pbftNode.NodeID, len(it.Txs))
 }
 
-// 🌐 バリデータ側の処理：届いたグローバルブロックを検証し、リーダーに投票を返す
-// 🌐 バリデータ側の処理：届いたグローバルブロックを検証し、リーダーに投票を返す
+// バリデータ側の処理：届いたグローバルブロックを検証し、リーダーに投票を返す
 func (rrom *SZHBFTOutsideModule) handleInterSZonePrepare(content []byte) {
 	var msg message.InterSZonePrepare
 	if err := json.Unmarshal(content, &msg); err != nil {
