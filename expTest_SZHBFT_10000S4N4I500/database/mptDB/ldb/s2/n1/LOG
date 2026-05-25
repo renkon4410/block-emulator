@@ -13,3 +13,12 @@
 00:09:59.739023 version@stat F·[] S·0B[] Sc·[]
 00:09:59.860715 db@janitor F·2 G·0
 00:09:59.861750 db@open done T·154.194797ms
+=============== May 25, 2026 (JST) ===============
+13:31:43.327528 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:31:43.460842 version@stat F·[] S·0B[] Sc·[]
+13:31:43.469124 db@open opening
+13:31:43.497536 journal@recovery F·1
+13:31:43.505652 journal@recovery recovering @2
+13:31:43.554399 version@stat F·[] S·0B[] Sc·[]
+13:31:43.839885 db@janitor F·2 G·0
+13:31:43.842166 db@open done T·366.344553ms
