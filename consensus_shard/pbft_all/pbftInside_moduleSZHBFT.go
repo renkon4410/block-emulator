@@ -52,35 +52,33 @@ func (rphm *SZHBFTPbftExtraHandleMod) HandleinPropose() (bool, *message.Request)
 		// 宛先をリストアップ
 		targetSZs := rphm.pbftNode.CurChain.GetRelatedShards(globalBlock)
 
+		// ⭕ message.go の定義（SenderNode）に完全準拠させて生成
 		prepareMsg := message.InterSZonePrepare{
 			Block:      globalBlock,
-			SeqID:      rphm.pbftNode.sequenceID + 1,      // r_i: 次のラウンド番号
-			View:       uint64(rphm.pbftNode.view.Load()), // v_i: 現在のビュー番号
-			ReqTime:    time.Now(),                        // ts_i: タイムスタンプ
-			SenderNode: rphm.pbftNode.RunningNode,         // リーダー自身のノード情報
+			SeqID:      rphm.pbftNode.sequenceID, // 現在の高度をターゲットにする
+			View:       uint64(rphm.pbftNode.view.Load()),
+			ReqTime:    time.Now(),
+			SenderNode: rphm.pbftNode.RunningNode,
 		}
 
-		// メッセージをバイト配列に変換
 		content, _ := json.Marshal(prepareMsg)
 		mergedMsg := message.MergeMessage(message.CInterSZonePrepare, content)
 
-		// ここで targetSZs に mergedMsg を送信する処理を書く
-		// (例: rphm.pbftNode.SendMsg(...) のようなネットワーク送信)
-		// 4. targetSZs（関係する全シャード）の全ノードに対してマルチキャスト送信！
+		// 関係する全シャードの全ノードに対してマルチキャスト送信！
 		for _, shardID := range targetSZs {
-			// そのシャードに所属している全ノードのIPアドレスを取得して回す
 			for _, ip := range rphm.pbftNode.ip_nodeTable[shardID] {
-				// ゴルーチン(go)を使って、非同期で一斉にネットワーク送信！
 				go networks.TcpDial(mergedMsg, ip)
 			}
 		}
-		log.Printf("S%dN%d : [SZHBFT-Leader] 関連SZへの Inter-SZonePREPARE 一斉送信完了！\n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID) // 今はエラー回避のために一旦置いておく
+		log.Printf("S%dN%d : [SZHBFT-Leader] 関連SZへの Inter-SZonePREPARE 一斉送信完了！📡\n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
 
-		// ★超重要★
-		// グローバルは「自シャード内のPBFT」には流さないので、絶対に false ！
-		return false, nil
+		// ⭕ 修正：リーダーに通知するため、false と共にリクエスト構造体を返す！
+		r := &message.Request{
+			RequestType: message.BlockRequest,
+			ReqTime:     time.Now(),
+		}
+		return false, r
 	}
-
 	// 両方空なら何もしない
 	return false, nil
 }

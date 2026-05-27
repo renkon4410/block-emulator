@@ -41,52 +41,79 @@ func (p *PbftConsensusNode) Propose() {
 		}
 	}()
 
-	for {
-		select {
-		case <-nextRoundBeginSignal:
-			go func() {
-				// if this node is not leader, do not propose.
-				if uint64(p.view.Load()) != p.NodeID {
-					return
-				}
+	go func() {
+		for {
+			select {
+			case <-nextRoundBeginSignal:
+				go func() {
+					// if this node is not leader, do not propose.
+					if uint64(p.view.Load()) != p.NodeID {
+						return
+					}
 
-				p.sequenceLock.Lock()
-				p.pl.Plog.Printf("S%dN%d get sequenceLock locked, now trying to propose...\n", p.ShardID, p.NodeID)
-				// propose
-				// implement interface to generate propose
-				_, r := p.ihm.HandleinPropose()
+					p.sequenceLock.Lock()
+					p.pl.Plog.Printf("S%dN%d get sequenceLock locked, now trying to propose...\n", p.ShardID, p.NodeID)
 
-				digest := getDigest(r)
-				p.requestPool[string(digest)] = r
-				p.pl.Plog.Printf("S%dN%d put the request into the pool ...\n", p.ShardID, p.NodeID)
+					// SZHBFTの仕分けプロポーズを実行
+					isLocal, r := p.ihm.HandleinPropose()
 
-				ppmsg := message.PrePrepare{
-					RequestMsg: r,
-					Digest:     digest,
-					SeqID:      p.sequenceID,
-				}
-				p.height2Digest[p.sequenceID] = string(digest)
-				// marshal and broadcast
-				ppbyte, err := json.Marshal(ppmsg)
-				if err != nil {
-					log.Panic()
-				}
-				msg_send := message.MergeMessage(message.CPrePrepare, ppbyte)
-				networks.Broadcast(p.RunningNode.IPaddr, p.getNeighborNodes(), msg_send)
-				networks.TcpDial(msg_send, p.RunningNode.IPaddr)
-				p.pbftStage.Store(2)
-			}()
+					// 🌐 【グローバル（EIGルート）だった場合】
+					if !isLocal && r != nil {
+						p.pl.Plog.Printf("S%dN%d : [SZHBFT] グローバルブロック（EIG）を射出したため、内部PBFTのロックを解放してOutsideに移行します。\n", p.ShardID, p.NodeID)
 
-		case <-p.pStop:
-			p.pl.Plog.Printf("S%dN%d get stopSignal in Propose Routine, now stop...\n", p.ShardID, p.NodeID)
-			return
+						// ⭕ 【完全同期】ベースシステムの見張り番ループとタイマーをリセットし、
+						// View Changeの誤作動を防ぎつつ、次のBlockIntervalへの回転木馬を止めない！
+						p.pbftStage.Store(1)
+						p.lastCommitTime.Store(time.Now().UnixMilli())
+
+						p.sequenceLock.Unlock()
+						return
+					}
+					// 🏠 【ローカル（空バッチ、または通常の自シャード完結ルート）だった場合】
+					// ※両方空（!isLocal && r == nil）の場合も、ベースシステムのタイムライン（broken pipe）を
+					// 防ぐために、通常の「空ローカルリクエスト」として安全にPBFTサイクルに流します。
+					if r == nil {
+						// 空のリクエストオブジェクトを生成して救済
+						r = &message.Request{
+							RequestType: message.BlockRequest,
+							ReqTime:     time.Now(),
+						}
+						// 内部の仕分けモジュール（Inside）で作った空ブロック、またはダミーを詰める
+						block := p.CurChain.GenerateBlock(int32(p.NodeID))
+						r.Msg.Content = block.Encode()
+					}
+
+					digest := getDigest(r)
+					p.requestPool[string(digest)] = r
+					p.pl.Plog.Printf("S%dN%d put the request into the pool ...\n", p.ShardID, p.NodeID)
+
+					ppmsg := message.PrePrepare{
+						RequestMsg: r,
+						Digest:     digest,
+						SeqID:      p.sequenceID,
+					}
+					p.height2Digest[p.sequenceID] = string(digest)
+
+					// marshal and broadcast
+					ppbyte, err := json.Marshal(ppmsg)
+					if err != nil {
+						log.Panic()
+					}
+					msg_send := message.MergeMessage(message.CPrePrepare, ppbyte)
+					networks.Broadcast(p.RunningNode.IPaddr, p.getNeighborNodes(), msg_send)
+					networks.TcpDial(msg_send, p.RunningNode.IPaddr)
+					p.pbftStage.Store(2)
+				}()
+
+			case <-p.pStop:
+				p.pl.Plog.Printf("S%dN%d get stopSignal in Propose Routine, now stop...\n", p.ShardID, p.NodeID)
+				return
+			}
 		}
-	}
+	}()
 }
 
 // Handle pre-prepare messages here.
-// If you want to do more operations in the pre-prepare stage, you can implement the interface "ExtraOpInConsensus",
-// and call the function: **ExtraOpInConsensus.HandleinPrePrepare**
 func (p *PbftConsensusNode) handlePrePrepare(content []byte) {
 	p.RunningNode.PrintNode()
 	fmt.Println("received the PrePrepare ...")
@@ -99,10 +126,13 @@ func (p *PbftConsensusNode) handlePrePrepare(content []byte) {
 
 	curView := p.view.Load()
 	p.pbftLock.Lock()
-	defer p.pbftLock.Unlock()
-	for p.pbftStage.Load() < 1 && ppmsg.SeqID >= p.sequenceID && p.view.Load() == curView {
+	if p.pbftStage.Load() < 1 && ppmsg.SeqID >= p.sequenceID && p.view.Load() == curView {
 		p.conditionalVarpbftLock.Wait()
 	}
+	p.pbftLock.Unlock()
+
+	p.pbftLock.Lock()
+	defer p.pbftLock.Unlock()
 	defer p.conditionalVarpbftLock.Broadcast()
 
 	// if this message is out of date, return.
@@ -146,8 +176,6 @@ func (p *PbftConsensusNode) handlePrePrepare(content []byte) {
 }
 
 // Handle prepare messages here.
-// If you want to do more operations in the prepare stage, you can implement the interface "ExtraOpInConsensus",
-// and call the function: **ExtraOpInConsensus.HandleinPrepare**
 func (p *PbftConsensusNode) handlePrepare(content []byte) {
 	p.pl.Plog.Printf("S%dN%d : received the Prepare ...\n", p.ShardID, p.NodeID)
 	// decode the message
@@ -159,10 +187,13 @@ func (p *PbftConsensusNode) handlePrepare(content []byte) {
 
 	curView := p.view.Load()
 	p.pbftLock.Lock()
-	defer p.pbftLock.Unlock()
-	for p.pbftStage.Load() < 2 && pmsg.SeqID >= p.sequenceID && p.view.Load() == curView {
+	if p.pbftStage.Load() < 2 && pmsg.SeqID >= p.sequenceID && p.view.Load() == curView {
 		p.conditionalVarpbftLock.Wait()
 	}
+	p.pbftLock.Unlock()
+
+	p.pbftLock.Lock()
+	defer p.pbftLock.Unlock()
 	defer p.conditionalVarpbftLock.Broadcast()
 
 	// if this message is out of date, return.
@@ -208,8 +239,6 @@ func (p *PbftConsensusNode) handlePrepare(content []byte) {
 }
 
 // Handle commit messages here.
-// If you want to do more operations in the commit stage, you can implement the interface "ExtraOpInConsensus",
-// and call the function: **ExtraOpInConsensus.HandleinCommit**
 func (p *PbftConsensusNode) handleCommit(content []byte) {
 	// decode the message
 	cmsg := new(message.Commit)
@@ -220,10 +249,13 @@ func (p *PbftConsensusNode) handleCommit(content []byte) {
 
 	curView := p.view.Load()
 	p.pbftLock.Lock()
-	defer p.pbftLock.Unlock()
-	for p.pbftStage.Load() < 3 && cmsg.SeqID >= p.sequenceID && p.view.Load() == curView {
+	if p.pbftStage.Load() < 3 && cmsg.SeqID >= p.sequenceID && p.view.Load() == curView {
 		p.conditionalVarpbftLock.Wait()
 	}
+	p.pbftLock.Unlock()
+
+	p.pbftLock.Lock()
+	defer p.pbftLock.Unlock()
 	defer p.conditionalVarpbftLock.Broadcast()
 
 	if cmsg.SeqID < p.sequenceID || p.view.Load() != curView {
@@ -238,13 +270,9 @@ func (p *PbftConsensusNode) handleCommit(content []byte) {
 	defer p.lock.Unlock()
 
 	if uint64(cnt) >= 2*p.malicious_nums+1 && !p.isReply[string(cmsg.Digest)] {
-		// p.pl.Plog.Printf("S%dN%d : has received 2f + 1 commits ... \n", p.ShardID, p.NodeID)
-
-		// if this node is left behind, so it need to requst blocks
 		if _, ok := p.requestPool[string(cmsg.Digest)]; !ok {
 			p.isReply[string(cmsg.Digest)] = true
 			p.askForLock.Lock()
-			// request the block
 			sn := &shard.Node{
 				NodeID:  uint64(p.view.Load()),
 				ShardID: p.ShardID,
@@ -283,10 +311,6 @@ func (p *PbftConsensusNode) handleCommit(content []byte) {
 	}
 }
 
-// this func is only invoked by the main node,
-// if the request is correct, the main node will send
-// block back to the message sender.
-// now this function can send both block and partition
 func (p *PbftConsensusNode) handleRequestOldSeq(content []byte) {
 	if uint64(p.view.Load()) != p.NodeID {
 		return
@@ -333,7 +357,6 @@ func (p *PbftConsensusNode) handleRequestOldSeq(content []byte) {
 	p.pl.Plog.Printf("S%dN%d : send blocks\n", p.ShardID, p.NodeID)
 }
 
-// node requst blocks and receive blocks from the main node
 func (p *PbftConsensusNode) handleSendOldSeq(content []byte) {
 	som := new(message.SendOldMessage)
 	err := json.Unmarshal(content, som)
