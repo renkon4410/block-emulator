@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 package pbft_all
 
 import (
