@@ -1,2 +1,0 @@
-EpochID,Total tx # in this epoch,Normal tx # in this epoch,Broker1 tx # in this epoch,Broker2 tx # in this epoch,Sum of Broker1 TCL (ms) (Duration: Broker1 Tx Propose -> Broker1 Tx Commit),Sum of Broker2 TCL (ms) (Duration: Broker2 Tx Propose -> Broker2 Tx Commit),Sum of innerShardTx TCL (ms),Sum of CTX TCL (ms) (Duration: Broker1 Tx Propose -> Broker2 Tx Commit),Sum of All Tx TCL (sec.)
-0,16000.00000000000000000000000000000000000000000000000000000000,10868,5132,5132,11144785,7678266,67979502,33105189,101092.75268106487055774778127670288085937500000000000000000000

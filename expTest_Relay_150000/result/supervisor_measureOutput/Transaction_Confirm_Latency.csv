@@ -1,2 +1,0 @@
-EpochID,Total tx # in this epoch,Normal tx # in this epoch,Relay1 tx # in this epoch,Relay2 tx # in this epoch,Sum of Relay1 TCL (ms) (Duration: Relay1 Tx Propose -> Relay1 Tx Commit),Sum of Relay2 TCL (ms) (Duration: Relay2 Tx Propose -> Relay2 Tx Commit),Sum of innerShardTx TCL (ms),Sum of CTX TCL (ms) (Duration: Relay1 Tx Propose -> Relay2 Tx Commit),Sum of All Tx TCL (sec.)
-0,150000.00000000000000000000000000000000000000000000000000000000,37380,112620,112620,525764413,225237412,174237038,751059116,925371.47403907089028507471084594726562500000000000000000000000

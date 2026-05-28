@@ -41,7 +41,7 @@ func buildBlockChain() (TxProofResult, []byte) {
 		BlockInterval:  uint64(params.Block_Interval),
 		InjectSpeed:    uint64(params.InjectSpeed),
 	}
-	CurChain, _ := NewBlockChain(pcc, db)
+	CurChain, _ := NewBlockChain(pcc, db, true)
 	CurChain.PrintBlockChain()
 
 	// update blokchain

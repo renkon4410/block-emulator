@@ -1,0 +1,57 @@
+Supervisor: 2026/05/28 18:53:10 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:11 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:12 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:13 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:14 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:15 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:15 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:16 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:17 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:18 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:19 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:19 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:19 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:20 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:21 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:21 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:21 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:22 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:23 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:23 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:23 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:24 committee_clpa_broker.go:258: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:53:25 committee_clpa_broker.go:258: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:53:25 committee_clpa_broker.go:258: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:53:25 committee_clpa_broker.go:258: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:53:26 supervisor.go:142: Supervisor: now sending cstop message to all nodes
+Supervisor: 2026/05/28 18:53:26 supervisor.go:151: Supervisor: now Closing
+Supervisor: 2026/05/28 18:53:26 supervisor.go:208: Closing...
+Supervisor: 2026/05/28 18:53:26 supervisor.go:210: Average_TPS
+Supervisor: 2026/05/28 18:53:26 supervisor.go:211: [357.28458194105167] 357.28458194105167
+Supervisor: 2026/05/28 18:53:26 supervisor.go:210: Transaction_Confirm_Latency
+Supervisor: 2026/05/28 18:53:26 supervisor.go:211: [3.2303685285886696] 3.2303685285886696
+Supervisor: 2026/05/28 18:53:26 supervisor.go:210: CrossTransaction_ratio
+Supervisor: 2026/05/28 18:53:26 supervisor.go:211: [0.437 3000 1311] 0.437
+Supervisor: 2026/05/28 18:53:26 supervisor.go:210: Tx_number
+Supervisor: 2026/05/28 18:53:26 supervisor.go:211: [3000] 3000
+Supervisor: 2026/05/28 18:53:26 supervisor.go:210: Tx_Details
+Supervisor: 2026/05/28 18:53:26 supervisor.go:211: [] 0
+ 18:52:01 committee_szhbft.go:128: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:52:01 committee_szhbft.go:128: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:52:01 committee_szhbft.go:128: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:52:01 committee_szhbft.go:128: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:52:03 committee_szhbft.go:128: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:52:03 committee_szhbft.go:128: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:52:03 committee_szhbft.go:128: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:52:03 committee_szhbft.go:128: received from shard 3 in epoch 0.
+Supervisor: 2026/05/28 18:52:05 committee_szhbft.go:128: received from shard 2 in epoch 0.
+Supervisor: 2026/05/28 18:52:05 committee_szhbft.go:128: received from shard 0 in epoch 0.
+Supervisor: 2026/05/28 18:52:05 committee_szhbft.go:128: received from shard 1 in epoch 0.
+Supervisor: 2026/05/28 18:52:05 committee_szhbft.go:128: received from shard 3 in epoch 0.

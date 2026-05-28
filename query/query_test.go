@@ -67,7 +67,7 @@ func buildBlockChain() {
 		BlockInterval:  uint64(params.Block_Interval),
 		InjectSpeed:    uint64(params.InjectSpeed),
 	}
-	CurChain, _ := chain.NewBlockChain(pcc, db)
+	CurChain, _ := chain.NewBlockChain(pcc, db, true)
 	CurChain.PrintBlockChain()
 	CurChain.AddAccounts(accounts, as, 0)
 	CurChain.Txpool.AddTx2Pool(core.NewTransaction("00000000001", "00000000002", big.NewInt(100000), 1, time.Now()))
