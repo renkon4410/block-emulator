@@ -166,7 +166,7 @@ func NewPbftNode(shardID, nodeID uint64, pcc *params.ChainConfig, messageHandleT
 			pbftNode: p,
 		}
 	default:	//SZHBFT
-		// ★ ローカル台帳用のDBパスを新しく分ける（グローバルMptDBと被らないように）
+	    // localChain 用のDBと localChain の生成
 		localFp := params.DatabaseWrite_path + "localMptDB/s" + strconv.FormatUint(shardID, 10) + "/n" + strconv.FormatUint(nodeID, 10)
         localDb, err := rawdb.NewLevelDBDatabase(localFp, 0, 1, "localAccountState", false)
         if err != nil {

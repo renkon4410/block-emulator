@@ -1,0 +1,786 @@
+S0N0: 2026/05/20 00:10:05 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 226 
+S0N0: 2026/05/20 00:10:06 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 169 
+S0N0: 2026/05/20 00:10:07 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:07 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:07 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:07 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:07 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:07 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:07 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:07 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:07 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:07 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:07 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:07 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:07 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:07 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 17 
+S0N0: 2026/05/20 00:10:07 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 214 
+S0N0: 2026/05/20 00:10:07 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 17
+S0N0: 2026/05/20 00:10:07 messageHandle.go:271: S0N0: this round of pbft 1 is end 
+S0N0: 2026/05/20 00:10:07 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:08 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 44 
+S0N0: 2026/05/20 00:10:09 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:09 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:09 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:09 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:09 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:09 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:09 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:09 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:09 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:09 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:09 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:09 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:09 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:09 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 18 
+S0N0: 2026/05/20 00:10:09 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 179 
+S0N0: 2026/05/20 00:10:09 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 18
+S0N0: 2026/05/20 00:10:09 messageHandle.go:271: S0N0: this round of pbft 2 is end 
+S0N0: 2026/05/20 00:10:09 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:10 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 195 
+S0N0: 2026/05/20 00:10:11 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:11 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:11 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:11 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:11 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:11 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:11 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:11 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:11 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:11 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:11 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:11 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:11 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:11 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 19 
+S0N0: 2026/05/20 00:10:11 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 216 
+S0N0: 2026/05/20 00:10:11 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 19
+S0N0: 2026/05/20 00:10:11 messageHandle.go:271: S0N0: this round of pbft 3 is end 
+S0N0: 2026/05/20 00:10:11 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:12 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 44 
+S0N0: 2026/05/20 00:10:13 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:13 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:13 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:13 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:13 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:13 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:13 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:13 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:13 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:13 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:13 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:13 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:13 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:13 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 20 
+S0N0: 2026/05/20 00:10:13 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 20
+S0N0: 2026/05/20 00:10:13 messageHandle.go:271: S0N0: this round of pbft 4 is end 
+S0N0: 2026/05/20 00:10:13 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:13 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 173 
+S0N0: 2026/05/20 00:10:14 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 146 
+S0N0: 2026/05/20 00:10:15 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:15 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:15 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:15 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:15 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:15 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:15 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:15 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:15 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:15 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:15 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:15 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:15 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:15 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 21 
+S0N0: 2026/05/20 00:10:15 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 21
+S0N0: 2026/05/20 00:10:15 messageHandle.go:271: S0N0: this round of pbft 5 is end 
+S0N0: 2026/05/20 00:10:15 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:15 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 141 
+S0N0: 2026/05/20 00:10:16 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 0 
+S0N0: 2026/05/20 00:10:17 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:17 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:17 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:17 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:17 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:17 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:17 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:17 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:17 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:17 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:17 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:17 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:17 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:17 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 22 
+S0N0: 2026/05/20 00:10:17 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 22
+S0N0: 2026/05/20 00:10:17 messageHandle.go:271: S0N0: this round of pbft 6 is end 
+S0N0: 2026/05/20 00:10:17 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:17 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 7 
+S0N0: 2026/05/20 00:10:18 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 11 
+S0N0: 2026/05/20 00:10:19 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:19 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:19 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:19 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:19 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:19 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:19 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:19 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:19 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:19 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:19 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:19 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:19 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:19 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 23 
+S0N0: 2026/05/20 00:10:19 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 23
+S0N0: 2026/05/20 00:10:19 messageHandle.go:271: S0N0: this round of pbft 7 is end 
+S0N0: 2026/05/20 00:10:19 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:19 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 87 
+S0N0: 2026/05/20 00:10:20 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 23 
+S0N0: 2026/05/20 00:10:21 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:21 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:21 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:21 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:21 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:21 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:21 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:21 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:21 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:21 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:21 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:21 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:21 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:21 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 24 
+S0N0: 2026/05/20 00:10:21 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 24
+S0N0: 2026/05/20 00:10:21 messageHandle.go:271: S0N0: this round of pbft 8 is end 
+S0N0: 2026/05/20 00:10:21 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:21 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 249 
+S0N0: 2026/05/20 00:10:22 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 18 
+S0N0: 2026/05/20 00:10:23 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:23 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:23 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:23 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:23 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:23 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:23 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:23 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:23 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:23 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:23 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:23 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:23 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:23 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 25 
+S0N0: 2026/05/20 00:10:23 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 25
+S0N0: 2026/05/20 00:10:23 messageHandle.go:271: S0N0: this round of pbft 9 is end 
+S0N0: 2026/05/20 00:10:23 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:23 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 44 
+S0N0: 2026/05/20 00:10:24 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 25 
+S0N0: 2026/05/20 00:10:25 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:25 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:25 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:25 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:25 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:25 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:25 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:25 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:25 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:25 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:25 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:25 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:25 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:25 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 26 
+S0N0: 2026/05/20 00:10:25 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 26
+S0N0: 2026/05/20 00:10:25 messageHandle.go:271: S0N0: this round of pbft 10 is end 
+S0N0: 2026/05/20 00:10:25 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:25 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 200 
+S0N0: 2026/05/20 00:10:26 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 116 
+S0N0: 2026/05/20 00:10:27 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:27 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:27 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:27 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:27 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:27 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:27 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:27 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:27 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:27 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:27 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:27 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:27 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:27 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 27 
+S0N0: 2026/05/20 00:10:27 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 27
+S0N0: 2026/05/20 00:10:27 messageHandle.go:271: S0N0: this round of pbft 11 is end 
+S0N0: 2026/05/20 00:10:27 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:27 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 201 
+S0N0: 2026/05/20 00:10:28 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 16 
+S0N0: 2026/05/20 00:10:29 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:29 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:29 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:29 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:29 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:29 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:29 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:29 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:29 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:29 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:29 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:29 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:29 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:29 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 28 
+S0N0: 2026/05/20 00:10:29 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 28
+S0N0: 2026/05/20 00:10:29 messageHandle.go:271: S0N0: this round of pbft 12 is end 
+S0N0: 2026/05/20 00:10:29 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:29 pbftOutside_moduleSZHBFT.go:125: S0N0 : has handled injected txs msg, txs: 124 
+S0N0: 2026/05/20 00:10:31 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:31 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:31 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:31 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:31 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:31 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:31 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:31 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:31 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:31 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:31 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:31 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:31 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:31 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 29 
+S0N0: 2026/05/20 00:10:31 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 29
+S0N0: 2026/05/20 00:10:31 messageHandle.go:271: S0N0: this round of pbft 13 is end 
+S0N0: 2026/05/20 00:10:31 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:33 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:33 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:33 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:33 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:33 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:33 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:33 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:33 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:33 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:33 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:33 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:33 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:33 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:33 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 30 
+S0N0: 2026/05/20 00:10:33 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 30
+S0N0: 2026/05/20 00:10:33 messageHandle.go:271: S0N0: this round of pbft 14 is end 
+S0N0: 2026/05/20 00:10:33 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:35 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:35 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:35 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:35 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:35 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:35 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:35 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:35 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:35 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:35 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:35 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:35 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:35 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:35 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 31 
+S0N0: 2026/05/20 00:10:35 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 31
+S0N0: 2026/05/20 00:10:35 messageHandle.go:271: S0N0: this round of pbft 15 is end 
+S0N0: 2026/05/20 00:10:35 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:37 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:37 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:37 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:37 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:37 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:37 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:37 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:37 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:37 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:37 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:37 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:37 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:37 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:37 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 32 
+S0N0: 2026/05/20 00:10:37 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 32
+S0N0: 2026/05/20 00:10:37 messageHandle.go:271: S0N0: this round of pbft 16 is end 
+S0N0: 2026/05/20 00:10:37 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:39 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:39 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:39 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:39 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:39 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:39 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:39 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:39 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:39 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:39 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:39 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:39 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:39 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:39 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 33 
+S0N0: 2026/05/20 00:10:39 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 33
+S0N0: 2026/05/20 00:10:39 messageHandle.go:271: S0N0: this round of pbft 17 is end 
+S0N0: 2026/05/20 00:10:39 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:41 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:41 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:41 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:41 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:41 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:41 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:41 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:41 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:41 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:41 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:41 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:41 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:41 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:41 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 34 
+S0N0: 2026/05/20 00:10:41 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 34
+S0N0: 2026/05/20 00:10:41 messageHandle.go:271: S0N0: this round of pbft 18 is end 
+S0N0: 2026/05/20 00:10:41 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:43 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:43 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:43 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:43 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:43 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:43 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:43 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:43 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:43 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:43 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:43 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:43 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:43 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:43 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 35 
+S0N0: 2026/05/20 00:10:43 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 35
+S0N0: 2026/05/20 00:10:43 messageHandle.go:271: S0N0: this round of pbft 19 is end 
+S0N0: 2026/05/20 00:10:43 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:45 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:45 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:45 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:45 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:45 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:45 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:45 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:45 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:45 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:45 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:45 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:45 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:45 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:45 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 36 
+S0N0: 2026/05/20 00:10:45 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 36
+S0N0: 2026/05/20 00:10:45 messageHandle.go:271: S0N0: this round of pbft 20 is end 
+S0N0: 2026/05/20 00:10:45 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:47 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:47 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:47 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:47 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:47 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:47 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:47 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:47 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:47 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:47 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:47 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:47 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:47 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:47 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 37 
+S0N0: 2026/05/20 00:10:47 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 37
+S0N0: 2026/05/20 00:10:47 messageHandle.go:271: S0N0: this round of pbft 21 is end 
+S0N0: 2026/05/20 00:10:47 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:49 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:49 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:49 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:49 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:49 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:49 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:49 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:49 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:49 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:49 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:49 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:49 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:49 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:49 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 38 
+S0N0: 2026/05/20 00:10:49 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 38
+S0N0: 2026/05/20 00:10:49 messageHandle.go:271: S0N0: this round of pbft 22 is end 
+S0N0: 2026/05/20 00:10:49 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:51 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:51 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:51 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:51 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:51 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:51 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:51 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:51 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:51 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:51 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:51 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:51 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:51 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:51 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 39 
+S0N0: 2026/05/20 00:10:51 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 39
+S0N0: 2026/05/20 00:10:51 messageHandle.go:271: S0N0: this round of pbft 23 is end 
+S0N0: 2026/05/20 00:10:51 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:53 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:53 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:53 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:53 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:53 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:53 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:53 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:53 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:53 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:53 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:53 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:53 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:53 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:53 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 40 
+S0N0: 2026/05/20 00:10:53 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 40
+S0N0: 2026/05/20 00:10:53 messageHandle.go:271: S0N0: this round of pbft 24 is end 
+S0N0: 2026/05/20 00:10:53 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:55 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:55 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:55 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:55 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:55 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:55 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:55 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:55 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:55 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:55 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:55 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:55 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:55 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:55 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 41 
+S0N0: 2026/05/20 00:10:55 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 41
+S0N0: 2026/05/20 00:10:55 messageHandle.go:271: S0N0: this round of pbft 25 is end 
+S0N0: 2026/05/20 00:10:55 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:57 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:57 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:57 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:57 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:57 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:57 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:57 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:57 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:57 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:57 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:57 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:10:57 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:57 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:57 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 42 
+S0N0: 2026/05/20 00:10:57 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 42
+S0N0: 2026/05/20 00:10:57 messageHandle.go:271: S0N0: this round of pbft 26 is end 
+S0N0: 2026/05/20 00:10:57 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:10:59 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:10:59 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:10:59 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:10:59 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:10:59 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:59 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:59 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:59 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:10:59 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:10:59 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:10:59 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:10:59 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:10:59 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:10:59 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 43 
+S0N0: 2026/05/20 00:10:59 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 43
+S0N0: 2026/05/20 00:10:59 messageHandle.go:271: S0N0: this round of pbft 27 is end 
+S0N0: 2026/05/20 00:10:59 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:11:01 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:11:01 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:11:01 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:11:01 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:11:01 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:01 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:01 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:01 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:11:01 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:01 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:11:01 messageHandle.go:233: S0N0 received the Commit from ...0
+S0N0: 2026/05/20 00:11:01 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:11:01 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:11:01 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 44 
+S0N0: 2026/05/20 00:11:01 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 44
+S0N0: 2026/05/20 00:11:01 messageHandle.go:271: S0N0: this round of pbft 28 is end 
+S0N0: 2026/05/20 00:11:01 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:11:03 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:11:03 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:11:03 pbftInside_moduleSZHBFT.go:102: S0N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S0N0: 2026/05/20 00:11:03 messageHandle.go:141: S0N0 : has broadcast the prepare message 
+S0N0: 2026/05/20 00:11:03 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:03 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:03 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:03 messageHandle.go:152: S0N0 : received the Prepare ...
+S0N0: 2026/05/20 00:11:03 messageHandle.go:188: S0N0 : is going to commit
+S0N0: 2026/05/20 00:11:03 messageHandle.go:203: S0N0 : commit is broadcast
+S0N0: 2026/05/20 00:11:03 messageHandle.go:233: S0N0 received the Commit from ...1
+S0N0: 2026/05/20 00:11:03 messageHandle.go:233: S0N0 received the Commit from ...2
+S0N0: 2026/05/20 00:11:03 messageHandle.go:233: S0N0 received the Commit from ...3
+S0N0: 2026/05/20 00:11:03 pbftInside_moduleSZHBFT.go:147: S0N0 : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = 45 
+S0N0: 2026/05/20 00:11:03 pbftInside_moduleSZHBFT.go:152: S0N0 : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = 45
+S0N0: 2026/05/20 00:11:03 messageHandle.go:271: S0N0: this round of pbft 29 is end 
+S0N0: 2026/05/20 00:11:03 messageHandle.go:281: S0N0 get sequenceLock unlocked...
+S0N0: 2026/05/20 00:11:05 messageHandle.go:54: S0N0 get sequenceLock locked, now trying to propose...
+S0N0: 2026/05/20 00:11:05 messageHandle.go:61: S0N0 put the request into the pool ...
+S0N0: 2026/05/20 00:11:08 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:08 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:09 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:09 view_change.go:85: Received new view message from Node 3
+S0N0: 2026/05/20 00:11:09 view_change.go:85: Received new view message from Node 0
+S0N0: 2026/05/20 00:11:09 view_change.go:85: Received new view message from Node 2
+S0N0: 2026/05/20 00:11:09 view_change.go:93: New view is updated.
+S0N0: 2026/05/20 00:11:09 view_change.go:85: Received new view message from Node 1
+S0N0: 2026/05/20 00:11:14 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:14 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:14 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:14 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:14 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:14 view_change.go:85: Received new view message from Node 0
+S0N0: 2026/05/20 00:11:14 view_change.go:85: Received new view message from Node 3
+S0N0: 2026/05/20 00:11:14 view_change.go:85: Received new view message from Node 1
+S0N0: 2026/05/20 00:11:14 view_change.go:93: New view is updated.
+S0N0: 2026/05/20 00:11:14 view_change.go:85: Received new view message from Node 2
+S0N0: 2026/05/20 00:11:20 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:20 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:20 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:20 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:20 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:20 view_change.go:85: Received new view message from Node 3
+S0N0: 2026/05/20 00:11:20 view_change.go:85: Received new view message from Node 2
+S0N0: 2026/05/20 00:11:20 view_change.go:85: Received new view message from Node 1
+S0N0: 2026/05/20 00:11:20 view_change.go:93: New view is updated.
+S0N0: 2026/05/20 00:11:20 view_change.go:85: Received new view message from Node 0
+S0N0: 2026/05/20 00:11:25 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:26 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:26 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:26 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:26 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:26 view_change.go:85: Received new view message from Node 0
+S0N0: 2026/05/20 00:11:26 view_change.go:85: Received new view message from Node 2
+S0N0: 2026/05/20 00:11:26 view_change.go:85: Received new view message from Node 3
+S0N0: 2026/05/20 00:11:26 view_change.go:93: New view is updated.
+S0N0: 2026/05/20 00:11:26 view_change.go:85: Received new view message from Node 1
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 2
+S0N0: 2026/05/20 00:11:31 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 1
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 0
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 3
+S0N0: 2026/05/20 00:11:31 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 0
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 3
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 1
+S0N0: 2026/05/20 00:11:31 view_change.go:85: Received new view message from Node 2
+S0N0: 2026/05/20 00:11:32 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:32 view_change.go:85: Received new view message from Node 0
+S0N0: 2026/05/20 00:11:32 view_change.go:85: Received new view message from Node 3
+S0N0: 2026/05/20 00:11:32 view_change.go:85: Received new view message from Node 2
+S0N0: 2026/05/20 00:11:32 view_change.go:85: Received new view message from Node 1
+S0N0: 2026/05/20 00:11:32 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:32 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:32 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:36 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:36 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:37 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:37 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:37 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:37 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:41 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:41 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:42 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:42 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:42 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:42 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:46 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:46 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:47 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:47 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:47 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:47 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:51 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:51 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:52 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:52 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:52 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:52 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:11:56 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:11:56 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:11:57 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:11:57 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:11:57 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:11:57 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:01 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:01 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:02 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:02 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:02 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:02 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:06 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:06 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:07 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:07 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:07 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:07 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:11 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:11 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:12 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:12 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:12 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:12 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:16 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:16 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:17 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:17 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:17 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:17 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:21 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:21 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:22 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:22 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:22 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:22 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:26 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:26 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:27 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:27 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:27 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:27 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:31 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:31 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:32 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:32 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:32 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:32 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:36 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:36 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:37 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:37 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:37 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:37 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:41 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:41 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:42 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:42 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:42 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:42 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:46 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:46 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:47 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:47 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:47 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:47 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:51 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:51 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:52 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:52 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:52 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:52 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:12:56 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:12:56 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:12:57 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:12:57 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:12:57 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:12:57 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:01 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:01 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:02 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:02 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:02 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:02 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:06 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:06 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:07 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:07 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:07 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:07 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:11 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:11 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:12 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:12 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:12 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:12 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:16 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:16 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:17 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:17 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:17 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:17 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:21 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:21 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:22 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:22 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:22 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:22 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:26 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:26 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:27 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:27 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:27 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:27 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:31 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:31 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:32 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:32 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:32 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:32 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:36 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:36 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:37 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:37 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:37 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:37 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:41 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:41 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:42 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:42 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:42 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:42 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:46 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:46 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:47 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:47 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:47 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:47 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:51 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:51 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:52 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:52 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:52 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:52 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:13:56 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:13:56 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:13:57 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:13:57 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:13:57 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:13:57 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:14:01 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:14:01 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:14:02 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:14:02 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:14:02 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:14:02 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:14:06 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:14:06 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:14:07 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:14:07 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:14:07 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:14:07 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:14:11 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:14:11 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:14:12 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:14:12 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:14:12 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:14:12 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:14:16 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:14:16 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:14:17 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:14:17 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:14:17 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:14:17 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:14:21 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:14:21 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:14:22 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:14:22 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:14:22 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:14:22 view_change.go:53: Received view change message from Node 0
+S0N0: 2026/05/20 00:14:26 view_change.go:53: Received view change message from Node 3
+S0N0: 2026/05/20 00:14:26 view_change.go:53: Received view change message from Node 2
+S0N0: 2026/05/20 00:14:27 view_change.go:53: Received view change message from Node 1
+S0N0: 2026/05/20 00:14:27 view_change.go:20: Main node is time out, now trying to view change. 
+S0N0: 2026/05/20 00:14:27 view_change.go:37: View change message is broadcasted. 
+S0N0: 2026/05/20 00:14:27 view_change.go:53: Received view change message from Node 0

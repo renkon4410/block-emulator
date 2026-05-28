@@ -1,0 +1,15 @@
+=============== May 20, 2026 (JST) ===============
+00:08:00.212178 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:08:00.243779 db@open opening
+00:08:00.249182 version@stat F·[] S·0B[] Sc·[]
+00:08:00.257325 db@janitor F·2 G·0
+00:08:00.257734 db@open done T·13.619077ms
+=============== May 20, 2026 (JST) ===============
+00:09:59.906825 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:09:59.937279 version@stat F·[] S·0B[] Sc·[]
+00:09:59.940022 db@open opening
+00:09:59.947110 journal@recovery F·1
+00:09:59.951640 journal@recovery recovering @1
+00:09:59.964645 version@stat F·[] S·0B[] Sc·[]
+00:10:00.052639 db@janitor F·2 G·0
+00:10:00.053905 db@open done T·112.794406ms

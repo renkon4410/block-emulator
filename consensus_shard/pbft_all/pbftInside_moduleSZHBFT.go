@@ -2,6 +2,7 @@
 package pbft_all
 
 import (
+	"blockEmulator/chain"
 	"blockEmulator/core"
 	"blockEmulator/message"
 	"blockEmulator/networks"
@@ -11,7 +12,6 @@ import (
 	"log"
 	"strconv"
 	"time"
-	"blockEmulator/chain"
 )
 
 // simple implementation of pbftHandleModule interface ...
@@ -20,32 +20,86 @@ type SZHBFTPbftExtraHandleMod struct {
 	pbftNode *PbftConsensusNode
 	// pointer to pbft data
 
-	ZoneID uint64
 	LocalChain *chain.BlockChain
+	// LocalChainのポインタ
+
+	ZoneID uint64
 }
 
 // propose request with different types
 func (rphm *SZHBFTPbftExtraHandleMod) HandleinPropose() (bool, *message.Request) {
-	// new blocks
-	block := rphm.pbftNode.CurChain.GenerateBlock(int32(rphm.pbftNode.NodeID))
-	r := &message.Request{
-		RequestType: message.BlockRequest,
-		ReqTime:     time.Now(),
-	}
-	r.Msg.Content = block.Encode()
+	// 新しいブロックを同時に2種生成（ローカルブロックとグローバルブロック）
+	localBlock, globalBlock := rphm.pbftNode.CurChain.GenerateSZBlock(int32(rphm.pbftNode.NodeID))
 
-	return true, r
+	// どちらのブロックを合意に乗せるかを決定
+	var targetBlock *core.Block = nil
+	if localBlock != nil {
+		targetBlock = localBlock
+		log.Printf("S%dN%d : 【SZHBFT】ローカルブロックをバッチ処理 。TX数：%d \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, len(localBlock.Body))
+
+		r := &message.Request{
+			RequestType: message.BlockRequest,
+			ReqTime:     time.Now(),
+		}
+		r.Msg.Content = targetBlock.Encode()
+
+		return true, r
+
+	} else if globalBlock != nil { // グローバル処理
+		targetBlock = globalBlock
+		log.Printf("S%dN%d : 【SZHBFT】グローバルブロックをバッチ処理 。TX数：%d \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, len(globalBlock.Body))
+
+		// 宛先をリストアップ
+		targetSZs := rphm.pbftNode.CurChain.GetRelatedShards(globalBlock)
+
+		// ⭕ message.go の定義（SenderNode）に完全準拠させて生成
+		prepareMsg := message.InterSZonePrepare{
+			Block:      globalBlock,
+			SeqID:      rphm.pbftNode.sequenceID, // 現在の高度をターゲットにする
+			View:       uint64(rphm.pbftNode.view.Load()),
+			ReqTime:    time.Now(),
+			SenderNode: rphm.pbftNode.RunningNode,
+		}
+
+		content, _ := json.Marshal(prepareMsg)
+		mergedMsg := message.MergeMessage(message.CInterSZonePrepare, content)
+
+		// 関係する全シャードの全ノードに対してマルチキャスト送信！
+		for _, shardID := range targetSZs {
+			for _, ip := range rphm.pbftNode.ip_nodeTable[shardID] {
+				go networks.TcpDial(mergedMsg, ip)
+			}
+		}
+		log.Printf("S%dN%d : [SZHBFT-Leader] 関連SZへの Inter-SZonePREPARE 一斉送信完了！📡\n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
+
+		// ⭕ 修正：リーダーに通知するため、false と共にリクエスト構造体を返す！
+		r := &message.Request{
+			RequestType: message.BlockRequest,
+			ReqTime:     time.Now(),
+		}
+		return false, r
+	}
+	// 両方空なら何もしない
+	return false, nil
 }
 
 // the DIY operation in preprepare
 func (rphm *SZHBFTPbftExtraHandleMod) HandleinPrePrepare(ppmsg *message.PrePrepare) bool {
+	// ⭕ 【安全弁】中身が空っぽの幽霊メッセージ（nil）が届いたら、即座に弾く！
+	if ppmsg == nil || ppmsg.RequestMsg == nil {
+		log.Println("⚠️ [SZHBFT] 空っぽの幽霊PrePrepareを検知したため、処理をスキップします。")
+		return false
+	}
+
+	// 安全が確認できたら、通常のブロック検証を行う
 	if rphm.pbftNode.CurChain.IsValidBlock(core.DecodeB(ppmsg.RequestMsg.Msg.Content)) != nil {
 		rphm.pbftNode.pl.Plog.Printf("S%dN%d : not a valid block\n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
 		return false
 	}
+
 	rphm.pbftNode.pl.Plog.Printf("S%dN%d : the pre-prepare message is correct, putting it into the RequestPool. \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
 	rphm.pbftNode.requestPool[string(ppmsg.Digest)] = ppmsg.RequestMsg
-	// merge to be a prepare message
+
 	return true
 }
 
@@ -60,30 +114,51 @@ func (rphm *SZHBFTPbftExtraHandleMod) HandleinCommit(cmsg *message.Commit) bool 
 	r := rphm.pbftNode.requestPool[string(cmsg.Digest)]
 	// requestType ...
 	block := core.DecodeB(r.Msg.Content)
-	isLocalSZBlock := true
 
+	// ============================================================
+	// ★【新設】SZ内完結（ローカル）か、SZ間（グローバル）かの判定
+	// ============================================================
+	isLocalSZBlock := true
 	for _, tx := range block.Body {
 		ssid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Sender)
 		rsid := rphm.pbftNode.CurChain.Get_PartitionMap(tx.Recipient)
-		// 1つでも自シャード以外が関わればグローバル！！！要改造!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		// 送信元と送信先がどちらも自シャード（SZ）ではないものが1つでもあればグローバル
 		if ssid != rphm.pbftNode.ShardID || rsid != rphm.pbftNode.ShardID {
-            isLocalSZBlock = false
-            break
-        }
+			isLocalSZBlock = false
+			break
+		}
 	}
+
 	if isLocalSZBlock {
-        // ① SZ内完結ルート
-        rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Local] ローカル台帳に記録。height = %d \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number)
-        rphm.LocalChain.AddBlock(block) 
-        return true // リレーせずに終了
-    }
+		// --------------------------------------------------------
+		// ①【SZ内完結ルート】EIGツリーPBFTを経てローカル台帳に記録
+		// --------------------------------------------------------
 
-	rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Global] グローバル台帳に記録します... \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
+		// ブロックの高さをローカル台帳の「現在の高さ + 1」に強制調整する
+		localHeight := rphm.LocalChain.CurrentBlock.Header.Number + 1
+		block.Header.Number = localHeight
+		// 親ブロックのハッシュリンクもローカル台帳の最新ハッシュに繋ぎ直す
+		block.Header.ParentBlockHash = rphm.LocalChain.CurrentBlock.Hash
+		// ブロック自身のハッシュも再計算して上書き
+		block.Hash = block.Header.Hash()
 
-	
+		rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Local] SZ内完結ブロックをローカル台帳に記録。adjusted height = %d \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number)
+
+		// ローカル専用の台帳（LocalChain）に保存
+		rphm.LocalChain.AddBlock(block)
+
+		rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Local] ローカル台帳への書き込み完了。現在のローカル最高高度 = %d\n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, rphm.LocalChain.CurrentBlock.Header.Number)
+
+		// SZ内完結なので、他シャードへの「リレー」は一切行わずにここで正常終了
+		return true
+	}
+	// --------------------------------------------------------
+	// ②【SZ間ルート】これまで通りのグローバル台帳への記録 ＆ リレー送信
+	// --------------------------------------------------------
+	rphm.pbftNode.pl.Plog.Printf("S%dN%d : [SZHBFT-Global] SZ間（他シャード跨ぎ）ブロックをグローバル台帳に記録します... \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID)
 	rphm.pbftNode.CurChain.AddBlock(block)
-	rphm.pbftNode.pl.Plog.Printf("S%dN%d : added the block %d... \n", rphm.pbftNode.ShardID, rphm.pbftNode.NodeID, block.Header.Number)
 	rphm.pbftNode.CurChain.PrintBlockChain()
+	// =============================================================
 
 	// now try to relay txs to other shards (for main nodes)
 	if rphm.pbftNode.NodeID == uint64(rphm.pbftNode.view.Load()) {

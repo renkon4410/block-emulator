@@ -25,6 +25,10 @@ const (
 
 	CBlockInfo MessageType = "BlockInfo"
 	CSeqIDinfo MessageType = "SequenceID"
+
+	CInterSZonePrepare MessageType = "InterSZonePrepare"
+	CInterSZoneConfirm MessageType = "InterSZoneConfirm"
+	CInterSZoneVote    MessageType = "InterSZVote"
 )
 
 var (
@@ -131,3 +135,31 @@ func SplitMessage(message []byte) (MessageType, []byte) {
 	content := message[prefixMSGtypeLen:]
 	return MessageType(msgType), content
 }
+
+// ////////////////////////////////////////
+// グローバル合意専用メッセージ
+type InterSZonePrepare struct {
+	Block      *core.Block // block_c: 仕分けられた純度100%のグローバルブロック
+	SeqID      uint64      // r_i: ラウンド番号
+	View       uint64      // v_i: ビュー番号
+	ReqTime    time.Time   // ts_i: タイムスタンプ
+	SenderNode *shard.Node // SZ間リーダーノード情報
+}
+
+type InterSZoneConfirm struct {
+	Block      *core.Block
+	SeqID      uint64
+	View       uint64
+	Signatures []byte // history signatures: EIGツリーで集めた署名の履歴
+	SenderNode *shard.Node
+}
+
+type InterSZoneVote struct {
+	SeqID         uint64 // どのラウンドへの投票か
+	View          uint64 // どのビューへの投票か
+	SenderShardID uint64 // 投票したバリデータのシャードID
+	SenderNodeID  uint64 // 投票したバリデータのノードID
+	Result        bool   // 検証結果 (OKならtrue, 異常ならfalse)
+}
+
+///////////////////////////////////////////
