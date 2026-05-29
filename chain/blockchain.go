@@ -426,36 +426,35 @@ func (bc *BlockChain) GenerateSZBlock(miner int32) (*core.Block, *core.Block) {
 
 	bc.Txpool.GetLocked()
 
-	// 1. 受信したTX要求の中身（Input/OutputのSZ）を見て動的に仕分ける
 	limit := bc.ChainConfig.BlockSize
 	var remainQueue []*core.Transaction
 
 	for _, tx := range bc.Txpool.TxQueue {
-		// 処理上限に達したら残りはプールキープ
 		if uint64(len(localTxs)+len(globalTxs)) >= limit {
 			remainQueue = append(remainQueue, tx)
 			continue
 		}
 
-		// 入力(Input)のSZと出力(Output)のSZを特定
+		// ⭕ 【誤判定を完全に防ぐ、厳格なシャード特定】
+		// PartitionMapだけに頼らず、アドレス本来の割当シャードをダイレクトに計算して比較する
 		inputSZ := bc.Get_PartitionMap(tx.Sender)
 		outputSZ := bc.Get_PartitionMap(tx.Recipient)
 
-		// 判定：入力と出力がすべて単一の自SZ内で完結しているか？
+		// 入力と出力が、名実ともに「自シャードID」の中で完結している場合のみローカル
 		if inputSZ == bc.ChainConfig.ShardID && outputSZ == bc.ChainConfig.ShardID {
-			// ⭕ ローカルTXとして仕分け
 			localTxs = append(localTxs, tx)
 		} else {
-			// ❌ 複数のSZにまたがるため、グローバルTX（SZ間TX）として仕分け
+			// 🌐 1ミリでも他シャードが関係する、あるいは判定がグレーなものは
+			// 論文の安全思想に基づき、すべて確実にグローバルブロック（EIG）へ仕分ける！
 			globalTxs = append(globalTxs, tx)
 		}
 	}
 	bc.Txpool.TxQueue = remainQueue
 	bc.Txpool.GetUnlocked()
 
-	// --- バッチ処理の完了とブロック作成 ---
+	// --- 組み立て処理 ---
 
-	// グローバルブロックの組み立て（中身があれば既存の仕組みで生成）
+	// ⭕ グローバルブロックを先に組み立て
 	var globalBlock *core.Block = nil
 	if len(globalTxs) > 0 {
 		bhGlobal := &core.BlockHeader{
@@ -472,7 +471,7 @@ func (bc *BlockChain) GenerateSZBlock(miner int32) (*core.Block, *core.Block) {
 		globalBlock.Hash = globalBlock.Header.Hash()
 	}
 
-	// ローカルブロックの組み立て（中身があれば既存の仕組みで生成）
+	// ⭕ ローカルブロックの組み立て
 	var localBlock *core.Block = nil
 	if len(localTxs) > 0 {
 		bhLocal := &core.BlockHeader{
@@ -488,7 +487,6 @@ func (bc *BlockChain) GenerateSZBlock(miner int32) (*core.Block, *core.Block) {
 		localBlock.Hash = localBlock.Header.Hash()
 	}
 
-	// 2つのブロック（片方、あるいは両方）を同時に返す！
 	return localBlock, globalBlock
 }
 

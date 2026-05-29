@@ -16,6 +16,7 @@ func initConfig(nid, nnm, sid, snm uint64) *params.ChainConfig {
 	params.SupervisorAddr = params.IPmap_nodeTable[params.SupervisorShard][0]
 
 	// check the correctness of params
+	// シャード数、ノード数がipTable.jsonに書かれているかチェック
 	if len(ipMap)-1 < int(snm) {
 		log.Panicf("Input ShardNumber = %d, but only %d shards in ipTable.json.\n", snm, len(ipMap)-1)
 	}
@@ -47,11 +48,12 @@ func initConfig(nid, nnm, sid, snm uint64) *params.ChainConfig {
 func BuildSupervisor(nnm, snm uint64) {
 	methodID := params.ConsensusMethod
 	var measureMod []string
-	if methodID == 0 || methodID == 2 {
+	switch methodID {
+	case 0, 2:
 		measureMod = params.MeasureBrokerMod
-	} else if methodID == 4 {
+	case 4:
 		measureMod = params.MeasureSZHBFTMod
-	} else {
+	default:
 		measureMod = params.MeasureRelayMod
 	}
 	measureMod = append(measureMod, "Tx_Details")

@@ -1,0 +1,430 @@
+S2N0: 2026/05/28 18:53:09 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 164 
+S2N0: 2026/05/28 18:53:10 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 1 
+S2N0: 2026/05/28 18:53:10 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 26
+S2N0: 2026/05/28 18:53:10 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:10 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 46 
+S2N0: 2026/05/28 18:53:11 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 135 
+S2N0: 2026/05/28 18:53:11 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:11 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 26
+S2N0: 2026/05/28 18:53:11 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:11 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:11 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:11 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:11 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:11 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:11 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:11 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:11 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:53:11 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:53:11 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:11 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:11 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 26...now height = 25 
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:89: S2N0 : added the block 26... 
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 26 
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:11 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:11 messageHandle.go:270: S2N0: this round of pbft 26 is end 
+S2N0: 2026/05/28 18:53:11 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:11 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 26
+S2N0: 2026/05/28 18:53:11 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:11 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 31 
+S2N0: 2026/05/28 18:53:12 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 68 
+S2N0: 2026/05/28 18:53:12 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 27
+S2N0: 2026/05/28 18:53:12 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:12 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/28 18:53:13 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 167 
+S2N0: 2026/05/28 18:53:13 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 27
+S2N0: 2026/05/28 18:53:13 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:13 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:13 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:13 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:13 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:13 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:13 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:13 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:13 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:13 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:13 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:53:13 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:53:13 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:13 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 27...now height = 26 
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:89: S2N0 : added the block 27... 
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 27 
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:13 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:13 messageHandle.go:270: S2N0: this round of pbft 27 is end 
+S2N0: 2026/05/28 18:53:13 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:13 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 27
+S2N0: 2026/05/28 18:53:13 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:13 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 80 
+S2N0: 2026/05/28 18:53:14 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 24 
+S2N0: 2026/05/28 18:53:14 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 28
+S2N0: 2026/05/28 18:53:14 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:14 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 36 
+S2N0: 2026/05/28 18:53:15 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 28
+S2N0: 2026/05/28 18:53:15 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:15 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:15 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:15 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:15 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:15 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:15 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:15 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:15 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:15 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:15 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:53:15 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:15 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:53:15 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 28...now height = 27 
+S2N0: 2026/05/28 18:53:15 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 28
+S2N0: 2026/05/28 18:53:15 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:89: S2N0 : added the block 28... 
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 28 
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:15 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:15 messageHandle.go:270: S2N0: this round of pbft 28 is end 
+S2N0: 2026/05/28 18:53:15 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:15 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 21 
+S2N0: 2026/05/28 18:53:16 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 29
+S2N0: 2026/05/28 18:53:16 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:16 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/28 18:53:17 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 29
+S2N0: 2026/05/28 18:53:17 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:17 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:17 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:17 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:17 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:17 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:17 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:17 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:17 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:17 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:17 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:17 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:53:17 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:53:17 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 29...now height = 28 
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:89: S2N0 : added the block 29... 
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 29 
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:17 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:17 messageHandle.go:270: S2N0: this round of pbft 29 is end 
+S2N0: 2026/05/28 18:53:17 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:17 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 29
+S2N0: 2026/05/28 18:53:17 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:17 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 69 
+S2N0: 2026/05/28 18:53:18 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 30
+S2N0: 2026/05/28 18:53:18 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:19 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 30
+S2N0: 2026/05/28 18:53:19 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:19 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:19 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:19 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:19 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:19 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:19 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:19 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:19 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:19 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:19 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:19 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:53:19 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:53:19 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 30...now height = 29 
+S2N0: 2026/05/28 18:53:19 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 30
+S2N0: 2026/05/28 18:53:19 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:89: S2N0 : added the block 30... 
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 30 
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:19 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:19 messageHandle.go:270: S2N0: this round of pbft 30 is end 
+S2N0: 2026/05/28 18:53:19 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:20 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 31
+S2N0: 2026/05/28 18:53:20 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:21 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 31
+S2N0: 2026/05/28 18:53:21 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:21 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:21 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:21 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:21 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:21 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:21 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:21 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:21 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:21 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:21 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:21 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:53:21 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:53:21 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 31...now height = 30 
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:89: S2N0 : added the block 31... 
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 31 
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:21 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:21 messageHandle.go:270: S2N0: this round of pbft 31 is end 
+S2N0: 2026/05/28 18:53:21 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:21 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 31
+S2N0: 2026/05/28 18:53:21 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:22 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 32
+S2N0: 2026/05/28 18:53:22 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:23 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 32
+S2N0: 2026/05/28 18:53:23 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:23 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:23 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:23 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:23 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:23 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:23 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:23 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:23 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:23 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:23 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:53:23 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:23 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:53:23 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 32...now height = 31 
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:89: S2N0 : added the block 32... 
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 32 
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:23 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:23 messageHandle.go:270: S2N0: this round of pbft 32 is end 
+S2N0: 2026/05/28 18:53:23 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:23 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 32
+S2N0: 2026/05/28 18:53:23 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:24 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 33
+S2N0: 2026/05/28 18:53:24 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:25 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 33
+S2N0: 2026/05/28 18:53:25 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:25 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:53:25 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:53:25 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:53:25 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:25 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:25 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:25 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:53:25 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:53:25 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:53:25 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:53:25 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:53:25 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:53:25 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 33...now height = 32 
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:89: S2N0 : added the block 33... 
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 33 
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:53:25 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:53:25 messageHandle.go:270: S2N0: this round of pbft 33 is end 
+S2N0: 2026/05/28 18:53:25 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:53:25 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 33
+S2N0: 2026/05/28 18:53:25 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:53:26 pbft.go:273: handling stop message
+S2N0: 2026/05/28 18:53:26 pbft.go:278: handled stop message in TCPListen Routine
+S2N0: 2026/05/28 18:53:26 messageHandle.go:81: S2N0 get stopSignal in Propose Routine, now stop...
+N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:46 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:52:46 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:52:46 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:52:46 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:46 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:52:46 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:52:46 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:52:46 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 22...now height = 21 
+S2N0: 2026/05/28 18:52:46 pbftInside_modCLPABroker.go:89: S2N0 : added the block 22... 
+S2N0: 2026/05/28 18:52:46 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 22 
+S2N0: 2026/05/28 18:52:46 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:52:46 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:52:46 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:52:46 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:52:46 messageHandle.go:270: S2N0: this round of pbft 22 is end 
+S2N0: 2026/05/28 18:52:46 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:52:46 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 22
+S2N0: 2026/05/28 18:52:46 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:46 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 15 
+S2N0: 2026/05/28 18:52:47 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 346 
+S2N0: 2026/05/28 18:52:47 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 23
+S2N0: 2026/05/28 18:52:47 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:47 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 49 
+S2N0: 2026/05/28 18:52:48 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 23
+S2N0: 2026/05/28 18:52:48 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:48 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:52:48 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:52:48 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 53 
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:52:48 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:52:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:48 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:52:48 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:52:48 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:52:48 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:48 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:52:48 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:52:48 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 23...now height = 22 
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:89: S2N0 : added the block 23... 
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 23 
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:52:48 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:52:48 messageHandle.go:270: S2N0: this round of pbft 23 is end 
+S2N0: 2026/05/28 18:52:48 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:52:48 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 23
+S2N0: 2026/05/28 18:52:48 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:48 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 24 
+S2N0: 2026/05/28 18:52:49 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 266 
+S2N0: 2026/05/28 18:52:49 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 24
+S2N0: 2026/05/28 18:52:49 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:49 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 0 
+S2N0: 2026/05/28 18:52:50 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 24
+S2N0: 2026/05/28 18:52:50 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:50 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:52:50 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:52:50 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:52:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:50 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:52:50 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:52:50 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:50 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:52:50 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:52:50 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:52:50 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 24...now height = 23 
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:89: S2N0 : added the block 24... 
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 24 
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:52:50 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:52:50 messageHandle.go:270: S2N0: this round of pbft 24 is end 
+S2N0: 2026/05/28 18:52:50 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:52:50 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 14 
+S2N0: 2026/05/28 18:52:50 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 24
+S2N0: 2026/05/28 18:52:50 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:50 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 25 
+S2N0: 2026/05/28 18:52:51 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 371 
+S2N0: 2026/05/28 18:52:51 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 0, the senderSeq is 25
+S2N0: 2026/05/28 18:52:51 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:51 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 63 
+S2N0: 2026/05/28 18:52:52 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 1, the senderSeq is 25
+S2N0: 2026/05/28 18:52:52 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+S2N0: 2026/05/28 18:52:52 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:52:52 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:63: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:52:52 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:52:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:52 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:52:52 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:52:52 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:52:52 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:52:52 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:52:52 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:87: S2N0 : adding the block 25...now height = 24 
+S2N0: 2026/05/28 18:52:52 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:89: S2N0 : added the block 25... 
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:94: S2N0 : main node is trying to send broker confirm txs at height = 25 
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 0
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 1
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:151: S2N0 : sended sequence ids to 3
+S2N0: 2026/05/28 18:52:52 pbftInside_modCLPABroker.go:171: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:52:52 messageHandle.go:270: S2N0: this round of pbft 25 is end 
+S2N0: 2026/05/28 18:52:52 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:52:52 pbftOutside_modCLPABroker.go:57: S2N0 : has handled injected txs msg, txs: 14 
+S2N0: 2026/05/28 18:52:52 pbftOutside_modCLPABroker.go:43: S2N0 : has received SeqIDinfo from shard 3, the senderSeq is 25
+S2N0: 2026/05/28 18:52:52 pbftOutside_modCLPABroker.go:47: S2N0 : has handled SeqIDinfo msg
+led injected txs msg, txs: 861 
+S2N0: 2026/05/28 18:52:03 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 489 
+S2N0: 2026/05/28 18:52:03 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:52:03 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:52:03 pbftInside_moduleSZHBFT.go:46: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:52:03 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:52:03 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:03 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:03 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:03 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:52:03 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:52:03 messageHandle.go:233: S2N0 received the Commit from ...0
+S2N0: 2026/05/28 18:52:03 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:52:03 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:03 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:52:03 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:52:03 pbftInside_moduleSZHBFT.go:81: S2N0 : [SZHBFT-Global] グローバル台帳に記録します... 
+S2N0: 2026/05/28 18:52:03 pbftInside_moduleSZHBFT.go:85: S2N0 : added the block 13... 
+S2N0: 2026/05/28 18:52:03 pbftInside_moduleSZHBFT.go:90: S2N0 : main node is trying to send relay txs at height = 13 
+S2N0: 2026/05/28 18:52:03 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/28 18:52:03 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/28 18:52:03 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/28 18:52:03 pbftInside_moduleSZHBFT.go:145: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:52:03 messageHandle.go:270: S2N0: this round of pbft 13 is end 
+S2N0: 2026/05/28 18:52:03 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:52:03 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 13
+S2N0: 2026/05/28 18:52:03 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/28 18:52:03 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 13
+S2N0: 2026/05/28 18:52:03 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/28 18:52:03 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 13
+S2N0: 2026/05/28 18:52:03 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/28 18:52:04 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 514 
+S2N0: 2026/05/28 18:52:05 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 454 
+S2N0: 2026/05/28 18:52:05 messageHandle.go:54: S2N0 get sequenceLock locked, now trying to propose...
+S2N0: 2026/05/28 18:52:05 messageHandle.go:61: S2N0 put the request into the pool ...
+S2N0: 2026/05/28 18:52:05 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:05 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:05 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:05 pbftInside_moduleSZHBFT.go:46: S2N0 : the pre-prepare message is correct, putting it into the RequestPool. 
+S2N0: 2026/05/28 18:52:05 messageHandle.go:141: S2N0 : has broadcast the prepare message 
+S2N0: 2026/05/28 18:52:05 messageHandle.go:188: S2N0 : is going to commit
+S2N0: 2026/05/28 18:52:05 messageHandle.go:203: S2N0 : commit is broadcast
+S2N0: 2026/05/28 18:52:05 messageHandle.go:233: S2N0 received the Commit from ...1
+S2N0: 2026/05/28 18:52:05 messageHandle.go:233: S2N0 received the Commit from ...3
+S2N0: 2026/05/28 18:52:05 messageHandle.go:233: S2N0 received the Commit from ...2
+S2N0: 2026/05/28 18:52:05 messageHandle.go:241: S2N0 : has received 2f + 1 commits ... 
+S2N0: 2026/05/28 18:52:05 pbftInside_moduleSZHBFT.go:81: S2N0 : [SZHBFT-Global] グローバル台帳に記録します... 
+S2N0: 2026/05/28 18:52:05 messageHandle.go:152: S2N0 : received the Prepare ...
+S2N0: 2026/05/28 18:52:05 pbftInside_moduleSZHBFT.go:85: S2N0 : added the block 14... 
+S2N0: 2026/05/28 18:52:05 pbftInside_moduleSZHBFT.go:90: S2N0 : main node is trying to send relay txs at height = 14 
+S2N0: 2026/05/28 18:52:05 toolFuncs.go:134: S2N0 : sended relay txs to 0
+S2N0: 2026/05/28 18:52:05 toolFuncs.go:134: S2N0 : sended relay txs to 1
+S2N0: 2026/05/28 18:52:05 toolFuncs.go:134: S2N0 : sended relay txs to 3
+S2N0: 2026/05/28 18:52:05 pbftInside_moduleSZHBFT.go:145: S2N0 : sended excuted txs
+S2N0: 2026/05/28 18:52:05 messageHandle.go:270: S2N0: this round of pbft 14 is end 
+S2N0: 2026/05/28 18:52:05 messageHandle.go:280: S2N0 get sequenceLock unlocked...
+S2N0: 2026/05/28 18:52:05 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 0, the senderSeq is 14
+S2N0: 2026/05/28 18:52:05 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/28 18:52:05 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 1, the senderSeq is 14
+S2N0: 2026/05/28 18:52:05 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/28 18:52:05 pbftOutside_moduleSZHBFT.go:68: S2N0 : has received relay txs from shard 3, the senderSeq is 14
+S2N0: 2026/05/28 18:52:05 pbftOutside_moduleSZHBFT.go:73: S2N0 : has handled relay txs msg
+S2N0: 2026/05/28 18:52:06 pbftOutside_moduleSZHBFT.go:111: S2N0 : has handled injected txs msg, txs: 601 
